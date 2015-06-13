@@ -43,7 +43,7 @@ Parse.Cloud.define("getDrawingsNoLongerNearby", function(request, response) {
 						break;
 					}
 				}
-					
+
 				//drawing is in current drawings but not query results
 				if (hasDrawing == 0){
 					resultsToReturnAndDelete[resultNumber] = currDrawings[i];
