@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.coms309r04.drawnear.views.FriendsActivity" >
+
+<TextView
+    android:id="@+id/logged_in_as_friends"
+    android:layout_width="fill_parent"
+    android:layout_height="24dp"
+    android:background="#99CCFF"
+    android:paddingRight="10dp"
+    android:textColor="#FFFFFF"
+    android:textSize="15sp"
+    android:text="Anonymous" 
+    android:gravity="right"/>
+
+    <ListView
+        android:id="@+id/friendsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/add_friend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignRight="@+id/friendsList"
+        android:layout_alignTop="@+id/add_friend_username"
+        android:onClick="addFriend"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_friend_username"
+        android:layout_below="@+id/add_friend_username"
+        android:text="Your friends:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/add_friend_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/logged_in_as_friends"
+        android:layout_marginLeft="16dp"
+        android:ems="10" />
+
+</RelativeLayout>

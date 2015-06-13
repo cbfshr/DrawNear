@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "DrawNear": {
+            "applicationId": "IxoHKtA2ofmKj4KtIaB9HTwQCiM9LZCV7ZgUx7t9", 
+            "masterKey": "anajpRPVaSvQPMix5XHwylVELWNbpCtsb2adufMO"
+        }, 
+        "_default": {
+            "link": "DrawNear"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.1"
+    }
+}
