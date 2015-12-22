@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class MapManager {
-
 	private static final String LONGITUDE = "longitude";
 	private static final String LATITUDE = "latitude";
 	private static final String ZOOM = "zoom";
@@ -20,8 +19,7 @@ public class MapManager {
 	private SharedPreferences mapStatePrefs;
 
 	public MapManager(Context context) {
-		mapStatePrefs = context.getSharedPreferences(PREFS,
-				Context.MODE_PRIVATE);
+		mapStatePrefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
 	}
 
 	public void saveMapState(GoogleMap map) {
@@ -50,8 +48,7 @@ public class MapManager {
 		float bearing = mapStatePrefs.getFloat(BEARING, 0);
 		float tilt = mapStatePrefs.getFloat(TILT, 0);
 
-		CameraPosition position = new CameraPosition(target, zoom, tilt,
-				bearing);
+		CameraPosition position = new CameraPosition(target, zoom, tilt, bearing);
 		return position;
 	}
 }

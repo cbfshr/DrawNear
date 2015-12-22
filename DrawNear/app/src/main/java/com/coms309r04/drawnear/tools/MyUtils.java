@@ -11,7 +11,6 @@ import android.content.Context;
 import android.content.Intent;
 
 public class MyUtils {
-
 	//Return an Intent to each view (activity) based on selecting that view from the options menu
 	//This is a helper method to easily navigate between pages for initial demoing purposes.
 	//It will not be in the final application
@@ -48,7 +47,5 @@ public class MyUtils {
 		}
 
 		return intent;
-
 	}
-
 }

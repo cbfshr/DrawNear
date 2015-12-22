@@ -25,7 +25,6 @@ import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
 public class DrawingManager {
-
 	public enum DisplayType {
 		MAP, LIST
 	};
@@ -118,19 +117,18 @@ public class DrawingManager {
 		if (this.currentDrawingsList.size() > 0) {
 			// sort array by drawing distance
 			Collections.sort(this.currentDrawingsList,
-					new Comparator<DrawingItem>() {
-						@Override
-						public int compare(DrawingItem d1, DrawingItem d2) {
-							return Double.compare(d1.getDistInMiles(),
-									d2.getDistInMiles());
-						}
-					});
+				new Comparator<DrawingItem>() {
+					@Override
+					public int compare(DrawingItem d1, DrawingItem d2) {
+						return Double.compare(d1.getDistInMiles(),
+								d2.getDistInMiles());
+					}
+				});
 		}
 	}
 
 	// Removes drawings from list if they are no longer nearby
 	public void removeDrawingsNoLongerNearby(ParseGeoPoint location) {
-
 		List<String> drawingKeysToRemove = new ArrayList<String>();
 		List<String> currentDrawingsKeys = new ArrayList<String>();
 
@@ -149,16 +147,14 @@ public class DrawingManager {
 		 * radius = 0.1; } else { radius = 0.8; } call_count_2++;
 		 */
 
-		Log.i("MAIN", "Calling noLongerNearby drawings with: " + radius
-				+ " km radius");
+		Log.i("MAIN", "Calling noLongerNearby drawings with: " + radius + " km radius");
 
 		params.put("radius", radius); // radius in km
 		params.put("currentDrawings", currentDrawingsKeys);
 		params.put("numberOfDrawings", currentDrawingsKeys.size());
 
 		try {
-			drawingKeysToRemove = ParseCloud.callFunction(
-					"getDrawingsNoLongerNearby", params);
+			drawingKeysToRemove = ParseCloud.callFunction("getDrawingsNoLongerNearby", params);
 
 			for (final String s : drawingKeysToRemove) {
 				// Log the returned objects
@@ -169,10 +165,9 @@ public class DrawingManager {
 
 				// remove from arraylist as well (use Iterator to allow removal
 				// while iterating)
-				Iterator<DrawingItem> iter = this.currentDrawingsList
-						.iterator();
-				while (iter.hasNext()) {
-					if (iter.next().getId().equals(s)) {
+				Iterator<DrawingItem> iter = this.currentDrawingsList.iterator();
+				while(iter.hasNext()) {
+					if(iter.next().getId().equals(s)) {
 						iter.remove();
 					}
 				}
@@ -274,7 +269,6 @@ public class DrawingManager {
 		// 2) Who can modify the Drawing??
 		acl.setWriteAccess(ParseUser.getCurrentUser(), true);
 		drawing.setACL(acl);
-		
 
 		// Create ParseFile from bmp. This saving process should be improved.
 		// Currently, the drawing is not saved until the bmp is saved
@@ -305,7 +299,6 @@ public class DrawingManager {
 		}
 
 		this.sortDrawingsListByDistance();
-
 	}
 
 	public DrawingItem getCurrentDrawingById(String id) {
@@ -343,8 +336,7 @@ public class DrawingManager {
 		return currentDrawingsList;
 	}
 
-	public void removeFromCurrentDrawings(
-			HashMap<String, DrawingItem> drawingsToRemove) {
+	public void removeFromCurrentDrawings(HashMap<String, DrawingItem> drawingsToRemove) {
 		for (String k : drawingsToRemove.keySet()) {
 			if (this.currentDrawings.containsKey(k)) {
 				this.currentDrawings.remove(k);
@@ -356,15 +348,13 @@ public class DrawingManager {
 		return this.currentDrawings;
 	}
 
-	public static int calculateInSampleSize(BitmapFactory.Options options,
-			int reqWidth, int reqHeight) {
+	public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
 		// Raw height and width of image
 		final int height = options.outHeight;
 		final int width = options.outWidth;
 		int inSampleSize = 1;
 
-		if (height > reqHeight || width > reqWidth) {
-
+		if(height > reqHeight || width > reqWidth) {
 			final int halfHeight = height / 2;
 			final int halfWidth = width / 2;
 
@@ -379,5 +369,4 @@ public class DrawingManager {
 
 		return inSampleSize;
 	}
-
 }

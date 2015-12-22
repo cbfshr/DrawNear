@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class AccountActivity extends Activity {
-
 	private SharedPreferences share;
 	private OnSharedPreferenceChangeListener listener;
 	@Override
@@ -22,10 +21,8 @@ public class AccountActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_account);
 		MyPreferenceFragment frag = new MyPreferenceFragment();
-		getFragmentManager().beginTransaction()
-		.add(R.id.Mycontainer, frag)
-		.commit();
-		
+		getFragmentManager().beginTransaction().add(R.id.Mycontainer, frag).commit();
+
 		share = PreferenceManager.getDefaultSharedPreferences(this);
 		//listener = new OnSharedPreferenceChangeListener() {
 
@@ -36,7 +33,7 @@ public class AccountActivity extends Activity {
 
 		//	}
 		//};
-	//	share.registerOnSharedPreferenceChangeListener(listener);
+		//share.registerOnSharedPreferenceChangeListener(listener);
 	}
 
 	@Override
@@ -58,13 +55,12 @@ public class AccountActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-
-
 	public void update(View v){
 		Intent intent = new Intent(this, AccountUpdateActivity.class);
 		startActivity(intent);
 
 	}
+
 	/*public void  modify(){
 		String pref= share.getString("email", "enter your id");
 		UserItem.displayText(AccountActivity.this, R.id.mail, pref);
@@ -74,9 +70,5 @@ public class AccountActivity extends Activity {
 
 		String pref2= share.getString("u-name", "enter your Username");
 		UserItem.displayText(AccountActivity.this, R.id.user_name, pref2);
-
-
 	}*/
-
-
 }

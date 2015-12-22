@@ -40,19 +40,15 @@ public class TabListener<T extends Activity> implements ActionBar.TabListener {
 			this.mActivityFrom.startActivity(intent);
 			//((Activity) this.mActivityFrom).overridePendingTransition(0, 0);
 		}
-
 	}
 
 	@Override
 	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
 		// TODO Auto-generated method stub
-
 	}
-
 }

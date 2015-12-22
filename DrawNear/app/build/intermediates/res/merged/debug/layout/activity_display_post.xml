@@ -83,4 +83,5 @@
         android:src="@drawable/pencil5"
         android:text="Edit" />
 
-</RelativeLayout><!-- From: file:/D:/Projects/DrawNear3/app/src/main/res/layout/activity_display_post.xml -->
+</RelativeLayout>
+<!-- From: file:/D:/Projects/DrawNear/DrawNear/app/src/main/res/layout/activity_display_post.xml -->

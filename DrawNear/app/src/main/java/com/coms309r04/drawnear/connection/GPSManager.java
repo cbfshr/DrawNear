@@ -16,7 +16,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 public class GPSManager {
-
     private IGPSActivity main;
 
     // Helper for GPS-Position
@@ -64,9 +63,9 @@ public class GPSManager {
 		return new ParseGeoPoint(last.getLatitude(), last.getLongitude());	
     }
     
-    /*public IGPSActivity getMain() {
+    public IGPSActivity getMain() {
 		return this.main;
-	}*/
+	}
 
 	private class MyLocationListener implements
 		ConnectionCallbacks,
@@ -79,9 +78,6 @@ public class GPSManager {
         GoogleApiClient mGoogleApiClient;
 
         public MyLocationListener(Context main) {
-			//mlocationClient = new LocationClient( (Context) main, this, this );
-			//mlocationClient.connect();
-
 			if (mGoogleApiClient == null) {
 				mGoogleApiClient = new GoogleApiClient.Builder(main)
 						.addConnectionCallbacks(this)
@@ -93,38 +89,30 @@ public class GPSManager {
         }
 
 		public void stopLocationUpdates() {
-			//mlocationClient.removeLocationUpdates(this);
-
-
 			if(mGoogleApiClient != null) {
 				try {
 					LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
 				} catch (SecurityException e) {
+					Log.e("GPS", "Remove Location Updates failed.");
 				}
 			}
 		}
 		
 		public void startLocationUpdates() {
-			//mlocationClient.requestLocationUpdates(request, this);
-
 			if(mGoogleApiClient != null) {
 				try {
 					LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, request, this);
 				} catch (SecurityException e) {
+					Log.e("GPS", "Request Location Updates failed.");
 				}
 			}
 		}
 		
 		public Location getLastLocation(){
-			//return mlocationClient.getLastLocation();
-			/*Location location = new Location("");
-			location.setLatitude(42.025410);
-			location.setLongitude(-93.646085);
-			return location;*/
-
 			try {
 				return LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 			} catch(SecurityException e) {
+				Log.e("GPS", "Get Last Location failed.");
 				return null;
 			}
 		}
@@ -133,7 +121,9 @@ public class GPSManager {
 		public void onLocationChanged(Location loc) {
 			if(lastUpdateLocation != null) {
 				float distance = loc.distanceTo(lastUpdateLocation);
-				if (distance > 20.0) { //20 meters
+
+				// 20 meters
+				if (distance > 20.0) {
 					lastUpdateLocation = loc;
 					GPSManager.this.main.locationChanged(loc.getLatitude(), loc.getLongitude(), distance, true);
 				} else {

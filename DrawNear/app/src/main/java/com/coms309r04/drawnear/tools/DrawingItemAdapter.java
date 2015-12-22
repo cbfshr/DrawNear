@@ -16,7 +16,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
-
 	public DrawingItemAdapter(Context context,
 			ArrayList<DrawingItem> drawingItems) {
 		super(context, 0, drawingItems);
@@ -37,23 +36,20 @@ public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
 		TextView distance = (TextView) convertView.findViewById(R.id.distance);
 		TextView title = (TextView) convertView.findViewById(R.id.title);
 		TextView creator = (TextView) convertView.findViewById(R.id.creator);
-		ImageView edit = (ImageView) convertView
-				.findViewById(R.id.drawing_edit);
-		TextView privacy = (TextView) convertView
-				.findViewById(R.id.drawing_privacy);
+		ImageView edit = (ImageView) convertView.findViewById(R.id.drawing_edit);
+		TextView privacy = (TextView) convertView.findViewById(R.id.drawing_privacy);
 
-		ImageView imagePreview = (ImageView) convertView
-				.findViewById(R.id.drawing_preview);
+		ImageView imagePreview = (ImageView) convertView.findViewById(R.id.drawing_preview);
 
 		title.setText(drawingItem.getTitle());
 
 		if (drawingItem.getCreator() != null) {
 			ParseUser u = drawingItem.getCreator();
-			if (u.getObjectId()
-					.equals(ParseUser.getCurrentUser().getObjectId()))
+			if (u.getObjectId().equals(ParseUser.getCurrentUser().getObjectId())) {
 				creator.setText("Drawn by you");
-			else
+			} else {
 				creator.setText("Drawn by " + u.getString("username"));
+			}
 		}
 
 		float miles = (float) drawingItem.getDistInMiles();
@@ -67,10 +63,11 @@ public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
 			imagePreview.setImageBitmap(drawingItem.getThumbnail());
 		}
 
-		if (drawingItem.isEditable())
+		if (drawingItem.isEditable()) {
 			edit.setVisibility(View.VISIBLE);
-		else
+		} else {
 			edit.setVisibility(View.INVISIBLE);
+		}
 
 		if (drawingItem.getPrivacy() != null) {
 			switch (drawingItem.getPrivacy()) {

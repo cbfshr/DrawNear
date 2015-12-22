@@ -1,15 +1,22 @@
 package com.coms309r04.drawnear.views;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
+import com.coms309r04.drawnear.R;
+import com.coms309r04.drawnear.connection.DrawingManager;
+import com.coms309r04.drawnear.connection.GPSManager;
+import com.coms309r04.drawnear.connection.IGPSActivity;
+import com.coms309r04.drawnear.data.DrawingItem;
+import com.coms309r04.drawnear.tools.DrawingItemAdapter;
+import com.coms309r04.drawnear.tools.MyUtils;
+import com.coms309r04.drawnear.tools.TabListener;
+import com.parse.GetDataCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseGeoPoint;
+import com.parse.ParseUser;
 
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.app.ActionBar;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,24 +32,6 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-
-
-
-
-import com.coms309r04.drawnear.R;
-import com.coms309r04.drawnear.connection.DrawingManager;
-import com.coms309r04.drawnear.connection.GPSManager;
-import com.coms309r04.drawnear.connection.IGPSActivity;
-import com.coms309r04.drawnear.data.DrawingItem;
-import com.coms309r04.drawnear.tools.DrawingItemAdapter;
-import com.coms309r04.drawnear.tools.MyUtils;
-import com.coms309r04.drawnear.tools.TabListener;
-import com.parse.GetDataCallback;
-import com.parse.ParseException;
-import com.parse.ParseFile;
-import com.parse.ParseGeoPoint;
-import com.parse.ParseUser;
 
 public class NearbyActivity extends Activity implements IGPSActivity {
 	ListView listView;
@@ -92,32 +81,28 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 		Tab tabFriends = actionBar.newTab().setText("Friends").setTabListener(new TabListener<FriendsActivity>(this, FriendsActivity.class));
 		actionBar.addTab(tabFriends);		
 		actionBar.selectTab(tabNearby);
-		
+
 		TabListener.tabsActive = true;
-		
-		
+
 		//Set up ListView
-		if (drawingAdapter == null) {
+		if(drawingAdapter == null) {
 			listView = (ListView) findViewById(R.id.nearby_list_view);
-			drawingAdapter = new DrawingItemAdapter(NearbyActivity.this,
-					DrawingManager.getInstance().getCurrentDrawingsList());
+			drawingAdapter = new DrawingItemAdapter(NearbyActivity.this, DrawingManager.getInstance().getCurrentDrawingsList());
 			listView.setAdapter(drawingAdapter);
 			listView.setOnItemClickListener(new OnItemClickListener() {
 				@Override
-				public void onItemClick(AdapterView<?> parent, View view,
-						int position, long id) {
+				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 					DrawingItem drawing = (DrawingItem) parent.getItemAtPosition(position);
 					Intent intent = new Intent(NearbyActivity.this, DisplayPostActivity.class);
 					intent.putExtra("id", drawing.getId());
 					startActivity(intent);
 				}
 			});
-
 		}
 
 		// If there are already drawings in ArrayList from before, get rid of
 		// the progress bar
-		if (DrawingManager.getInstance().getCurrentDrawingsList().size() > 0) {
+		if(DrawingManager.getInstance().getCurrentDrawingsList().size() > 0) {
 			pb.setVisibility(View.INVISIBLE);
 		}
 	}
@@ -136,26 +121,25 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 		// Temporary demo functionality to access all views with the settings menu
 		Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
 
-		if (intent != null) {
+		if(intent != null) {
 			//views that should load "on top" of view
-			if (item.getItemId() != R.id.action_goto_create_post) {
+			if(item.getItemId() != R.id.action_goto_create_post) {
 				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 			}
 
 			startActivity(intent);
-		} else if (item.getItemId() == MENU_REFRESH_LIST) {
+		} else if(item.getItemId() == MENU_REFRESH_LIST) {
 			loadAndUpdateDrawings();
-
 		}
+
 		return super.onOptionsItemSelected(item);
 	}
 
-	private void loadImageAtListPosition(final String drawingKey,
-			ParseFile bitmap) {
+	private void loadImageAtListPosition(final String drawingKey, ParseFile bitmap) {
 		bitmap.getDataInBackground(new GetDataCallback() {
 			@Override
 			public void done(byte[] data, ParseException e) {
-				if (e == null) {
+				if(e == null) {
 					//Resize drawing to thumbnail size
 					// First decode with inJustDecodeBounds=true to check dimensions
 					BitmapFactory.Options options=new BitmapFactory.Options();
@@ -180,9 +164,8 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 	}
 
 	private void loadAndUpdateDrawings() {
-		if (gps.getLastLocation() == null) {
-			Toast.makeText(this, "Can't get last location.", Toast.LENGTH_SHORT)
-					.show();
+		if(gps.getLastLocation() == null) {
+			Toast.makeText(this, "Can't get last location.", Toast.LENGTH_SHORT).show();
 		}
 
 		/*Toast.makeText(this, "Checking for new drawings...", Toast.LENGTH_SHORT).show();*/
@@ -198,8 +181,9 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 
 	@Override
 	protected void onResume() {
-		if (!gps.isRunning())
+		if(!gps.isRunning()) {
 			gps.resumeGPS();
+		}
 		super.onResume();
 	}
 
@@ -211,18 +195,13 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 
 	@Override
 	public void locationChanged(double lat, double lng, float distanceFromLastLocation, boolean updatedLastLocation) {
-		/*Toast.makeText(
-				this,
-				"Lat: " + lat + " Long: " + lng + "_"
-						+ distanceFromLastLocation, Toast.LENGTH_SHORT).show();*/
+		/*Toast.makeText(this, "Lat: " + lat + " Long: " + lng + "_" + distanceFromLastLocation, Toast.LENGTH_SHORT).show();*/
 
-		if (updatedLastLocation) {
+		if(updatedLastLocation) {
 			loadAndUpdateDrawings();
 			/*Toast.makeText(this, "Updating drawings.", Toast.LENGTH_SHORT).show();*/
 		} else {
-			/*Toast.makeText(this,
-					"Not far enough from last location to update drawings.",
-					Toast.LENGTH_SHORT).show();*/
+			/*Toast.makeText(this, "Not far enough from last location to update drawings.", Toast.LENGTH_SHORT).show();*/
 		}
 	}
 
@@ -234,13 +213,12 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 	}
 
 	private class MyTask extends AsyncTask<String, String, String> {
-
 		@Override
 		protected void onPreExecute() {
 			// has access to main thread
 			Log.i("MAIN", "Starting task");
 
-			if (drawingAdapter == null) {
+			if(drawingAdapter == null) {
 				pb.setVisibility(View.VISIBLE);
 			}
 		}
@@ -261,24 +239,20 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 			// has access to main thread
 			// update display here
 
-			if (result == null) {
-				Toast.makeText(NearbyActivity.this,
-						"Could not connect to receive drawings",
-						Toast.LENGTH_SHORT).show();
+			if(result == null) {
+				Toast.makeText(NearbyActivity.this, "Could not connect to receive drawings", Toast.LENGTH_SHORT).show();
 			}
 
-			Log.i("MAIN", "New nearby drawings size is: "
-					+ DrawingManager.getInstance().getCurrentNearbyDrawings()
-							.size());
+			Log.i("MAIN", "New nearby drawings size is: " + DrawingManager.getInstance().getCurrentNearbyDrawings().size());
 
 			drawingAdapter.notifyDataSetChanged(); // refresh list view
 
 			// load in each picture one by one (if they have not previously
 			// been
 			// loaded)
-			for (DrawingItem d : DrawingManager.getInstance()
+			for(DrawingItem d : DrawingManager.getInstance()
 					.getCurrentNearbyDrawings().values()) {
-				if (d.getBitmapFile() != null && d.getThumbnail() == null) {
+				if(d.getBitmapFile() != null && d.getThumbnail() == null) {
 					loadImageAtListPosition(d.getId(), d.getBitmapFile());
 				}
 			}
@@ -286,10 +260,9 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 			pb.setVisibility(View.INVISIBLE);
 			// IF there is still no content to display after a request, show
 			// message "No content to display"
-			if (DrawingManager.getInstance().getCurrentNearbyDrawings().size() == 0) {
+			if(DrawingManager.getInstance().getCurrentNearbyDrawings().size() == 0) {
 				noContent.setVisibility(View.VISIBLE);
-			}
-			else{
+			} else{
 				noContent.setVisibility(View.INVISIBLE);
 			}
 		}

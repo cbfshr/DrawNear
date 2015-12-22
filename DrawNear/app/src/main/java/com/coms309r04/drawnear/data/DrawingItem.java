@@ -12,9 +12,7 @@ import com.parse.ParseUser;
 
 import android.graphics.Bitmap;
 
-
 public class DrawingItem {
-
 	public enum PRIV_TYPE{
 		PUBLIC, FRIENDS, PRIVATE
 	}
@@ -134,7 +132,6 @@ public class DrawingItem {
 
 	public ParseUser getCreator() {
 		return creator;
-
 	}
 
 	public void setCreator(ParseUser creator) {
@@ -151,7 +148,6 @@ public class DrawingItem {
 
 	public void setMarkerId(String markerId) {
 		this.markerId = markerId;
-
 	}
 
 	public void setThumbnail(Bitmap thumbnail) {

@@ -36,7 +36,7 @@ public class DisplayPostActivity extends Activity {
 	private static ParseUser drawingOwner;
 	private static DrawingItem d;
 	private static ParseObject drawingToDelete;
-	
+
 	ImageView iv;
 	TextView title;
 	TextView creator;
@@ -45,7 +45,7 @@ public class DisplayPostActivity extends Activity {
 	TextView privacy;
 	TextView rating;
 	ImageButton edit;
-	
+
 	ProgressBar pb;
 
 	@Override
@@ -86,7 +86,7 @@ public class DisplayPostActivity extends Activity {
 			 * Toast.makeText(this, "Could not load drawing",
 			 * Toast.LENGTH_SHORT).show(); }
 			 */
-			
+
 			getDrawingAndUpdateView();
 
 			title.setText(d.getTitle());
@@ -126,13 +126,9 @@ public class DisplayPostActivity extends Activity {
 				privacy.setText("Public");
 			}
 			rating.setText("+5");
-
 		} else {
-
-			Toast.makeText(this, "Could not load drawing", Toast.LENGTH_SHORT)
-					.show();
+			Toast.makeText(this, "Could not load drawing", Toast.LENGTH_SHORT).show();
 		}
-
 	}
 
 	private void getDrawingAndUpdateView() {
@@ -163,16 +159,15 @@ public class DisplayPostActivity extends Activity {
 						e.printStackTrace();
 					}
 				}
-
 			});
 		}
-		
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.navigation, menu);
+
 		// if(ParseUser.getCurrentUser().equals(drawingOwner)) {
 		if (drawingOwner != null) {
 			if (ParseUser.getCurrentUser().getObjectId()
@@ -183,6 +178,7 @@ public class DisplayPostActivity extends Activity {
 				deleteDrawing.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 			}
 		}
+
 		return true;
 	}
 
@@ -224,7 +220,6 @@ public class DisplayPostActivity extends Activity {
 		Intent intent = new Intent(this, CreatePostActivity.class);
 		intent.putExtra("id", d.getId());
 		startActivityForResult(intent, REQUEST_EDIT);
-
 	}
 
 	@Override
@@ -234,12 +229,9 @@ public class DisplayPostActivity extends Activity {
 			if (extras != null) {
 				String drawingId = extras.getString("id");
 
-				d = DrawingManager.getInstance().getCurrentDrawingById(
-						drawingId);
+				d = DrawingManager.getInstance().getCurrentDrawingById(drawingId);
 				getDrawingAndUpdateView();
-
 			}
 		}
 	}
-
 }

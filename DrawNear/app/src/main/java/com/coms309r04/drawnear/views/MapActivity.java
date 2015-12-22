@@ -68,8 +68,9 @@ import com.parse.ParseUser;
 // 2. Add google-play-services_lib as a library project to your application
 // ( I copied it into my workspace (it is not in the SVN repo) )
 
-public class MapActivity extends FragmentActivity implements IGPSActivity,
-		OnMarkerClickListener, OnMapClickListener, OnInfoWindowClickListener {
+public class MapActivity
+	extends FragmentActivity
+	implements IGPSActivity, OnMarkerClickListener, OnMapClickListener, OnInfoWindowClickListener {
 
 	private static final int GPS_ERRORDIALOG_REQUEST = 9001;
 	private static final int MENU_GET_CURRENT_LOCATION = 9002;
@@ -82,12 +83,12 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 	// HashMap<String, DrawingItem> nearbyDrawings;
 	// markerId, drawingId
-	HashMap<String, String> markerIDsToDrawingsIDs = new HashMap<String, String>();;
+	HashMap<String, String> markerIDsToDrawingsIDs = new HashMap<String, String>();
+
 	// markerId, Marker
 	HashMap<String, Marker> markerIDsToMarkers = new HashMap<String, Marker>();
 
-	// list of markers in order by distance so the user can scroll through info
-	// windows
+	// list of markers in order by distance so the user can scroll through info windows
 	ArrayList<Marker> markerReferences = new ArrayList<Marker>();
 	Marker selectedMarker = null;
 
@@ -123,10 +124,8 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 		actionBar.selectTab(tabMap);
 
 		TabListener.tabsActive = true;
-		
-		
-		if (servicesOK()) {
 
+		if (servicesOK()) {
 			setContentView(R.layout.activity_map);
 
 			pbMap = (ProgressBar) findViewById(R.id.progressBar2);
@@ -144,18 +143,15 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 			TextView loggedInAs = (TextView) findViewById(R.id.logged_in_as_map);
 			loggedInAs.setText(ParseUser.getCurrentUser().getUsername());
-		
-			
-			
 
 			if(initMap()) {
-				if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
-						!= PackageManager.PERMISSION_GRANTED) {
-					ActivityCompat.requestPermissions(this,
-							new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
-							1);
+				if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+					ActivityCompat.requestPermissions(
+						this,
+						new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+						1
+					);
 				}
-
 
 				//mMap.setMyLocationEnabled(true);
 				gps = new GPSManager(this);
@@ -163,12 +159,9 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 				drawMarkers();
 				// mLocationClient = new LocationClient(this, this, this);
 				// mLocationClient.connect();
-
 			} else {
-				Toast.makeText(this, "Map not available!", Toast.LENGTH_SHORT)
-						.show();
+				Toast.makeText(this, "Map not available!", Toast.LENGTH_SHORT).show();
 			}
-
 		} else {
 			setContentView(R.layout.activity_map_no_map);
 		}
@@ -180,12 +173,10 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 			case 1: {
 				// If request is cancelled, the result arrays are empty.
 				if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-					mMap.setMyLocationEnabled(true);
 					// permission was granted, yay! Do the
 					// contacts-related task you need to do.
-
+					mMap.setMyLocationEnabled(true);
 				} else {
-
 					// permission denied, boo! Disable the
 					// functionality that depends on this permission.
 				}
@@ -195,10 +186,9 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 			// other 'case' lines to check for other
 			// permissions this app might request
 		}
-
 	}
 
-		@Override
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.navigation, menu);
@@ -212,13 +202,10 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Temporary demo functionality to access all views with the settings
-		// menu
+		// Temporary demo functionality to access all views with the settings menu
 
-		Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(),
-				this);
+		Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
 		if (intent != null) {
-
 			// views that should load "on top" of view
 			if (item.getItemId() != R.id.action_goto_create_post) {
 				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -228,6 +215,7 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 			gotoCurrentLocationDefaultZoom();
 			loadAndUpdateDrawings();
 		}
+
 		return super.onOptionsItemSelected(item);
 	}
 
@@ -241,19 +229,18 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 	@Override
 	protected void onResume() {
-		if (!gps.isRunning())
+		if (!gps.isRunning()) {
 			gps.resumeGPS();
+		}
 
 		super.onResume();
 
 		MapManager mgr = new MapManager(this);
 		CameraPosition position = mgr.getSavedCameraPosition();
 		if (position != null) {
-			CameraUpdate update = CameraUpdateFactory
-					.newCameraPosition(position);
+			CameraUpdate update = CameraUpdateFactory.newCameraPosition(position);
 			mMap.moveCamera(update);
 		}
-
 	}
 
 	private void loadAndUpdateDrawings() {
@@ -263,37 +250,31 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 					.show();
 		}
 
-		/*Toast.makeText(this, "Checking for new drawings...", Toast.LENGTH_SHORT)
-				.show();*/
+		/*Toast.makeText(this, "Checking for new drawings...", Toast.LENGTH_SHORT).show();*/
 		MyMapTask getDrawingsThread = new MyMapTask();
 		getDrawingsThread.execute();
 	}
 
 	public boolean servicesOK() {
-		int isAvailable = GooglePlayServicesUtil
-				.isGooglePlayServicesAvailable(this);
+		int isAvailable = GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
 		if (isAvailable == ConnectionResult.SUCCESS) {
 			return true;
 		} else if (GooglePlayServicesUtil.isUserRecoverableError(isAvailable)) {
-			Dialog dialog = GooglePlayServicesUtil.getErrorDialog(isAvailable,
-					this, GPS_ERRORDIALOG_REQUEST);
+			Dialog dialog = GooglePlayServicesUtil.getErrorDialog(isAvailable, this, GPS_ERRORDIALOG_REQUEST);
 			dialog.show();
 		} else {
-			Toast.makeText(this, "Can't connect to Google Play services",
-					Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Can't connect to Google Play services", Toast.LENGTH_SHORT).show();
 		}
 		return false;
 	}
 
 	private boolean initMap() {
 		if (mMap == null) {
-			SupportMapFragment mapFrag = (SupportMapFragment) getSupportFragmentManager()
-					.findFragmentById(R.id.map);
+			SupportMapFragment mapFrag = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
 			mMap = mapFrag.getMap();
 
 			if (mMap != null) {
 				mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-
 					@Override
 					public View getInfoWindow(Marker arg0) {
 						return null;
@@ -301,21 +282,15 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 					@Override
 					public View getInfoContents(Marker marker) {
-
-						View v = getLayoutInflater().inflate(
-								R.layout.map_info_window, null);
-						TextView tvTitle = (TextView) v
-								.findViewById(R.id.map_drawing_title);
-						TextView tvDistance = (TextView) v
-								.findViewById(R.id.map_drawing_distance);
-						TextView tvCreator = (TextView) v
-								.findViewById(R.id.map_drawing_creator);
+						View v = getLayoutInflater().inflate(R.layout.map_info_window, null);
+						TextView tvTitle = (TextView) v.findViewById(R.id.map_drawing_title);
+						TextView tvDistance = (TextView) v.findViewById(R.id.map_drawing_distance);
+						TextView tvCreator = (TextView) v.findViewById(R.id.map_drawing_creator);
 
 						ImageView ivThumb = (ImageView) v
 								.findViewById(R.id.map_thumbnail);
 						tvTitle.setText(marker.getTitle());
 
-						/**/
 						DrawingItem d = DrawingManager
 								.getInstance()
 								.getCurrentNearbyDrawings()
@@ -323,37 +298,30 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 						float miles = (float) d.getDistInMiles();
 						if (miles >= 0.05) {
-							tvDistance.setText(String.format("%.2f", miles)
-									+ " miles away");
+							tvDistance.setText(String.format("%.2f", miles) + " miles away");
 						} else {
-							tvDistance.setText((int) (miles * 5280)
-									+ " feet away");
+							tvDistance.setText((int) (miles * 5280) + " feet away");
 						}
 
 						if (d.getCreator() != null) {
 							ParseUser u = d.getCreator();
-							if (u.getObjectId().equals(
-									ParseUser.getCurrentUser().getObjectId()))
+							if (u.getObjectId().equals(ParseUser.getCurrentUser().getObjectId())) {
 								tvCreator.setText("Drawn by you");
-							else
-								tvCreator.setText("Drawn by "
-										+ u.getString("username"));
+							} else {
+								tvCreator.setText("Drawn by " + u.getString("username"));
+							}
 						}
 
-						if (d.getThumbnail() != null) {
+						if(d.getThumbnail() != null) {
 							ivThumb.setImageBitmap(d.getThumbnail());
-
 						}
 						return v;
 					}
 				});
 
 				mMap.setOnMarkerClickListener((OnMarkerClickListener) this);
-
 				mMap.setOnMapClickListener((OnMapClickListener) this);
-
 				mMap.setOnInfoWindowClickListener((OnInfoWindowClickListener) this);
-
 			}
 		}
 		return (mMap != null);
@@ -361,14 +329,11 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 	protected void gotoCurrentLocationDefaultZoom() {
 		ParseGeoPoint currentLocation = gps.getLastLocation();
-		if (currentLocation == null) {
-			Toast.makeText(this, "Current location isn't available",
-					Toast.LENGTH_SHORT).show();
+		if(currentLocation == null) {
+			Toast.makeText(this, "Current location isn't available", Toast.LENGTH_SHORT).show();
 		} else {
-			LatLng ll = new LatLng(currentLocation.getLatitude(),
-					currentLocation.getLongitude());
-			CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll,
-					DEFAULTZOOM);
+			LatLng ll = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+			CameraUpdate update = CameraUpdateFactory.newLatLngZoom(ll, DEFAULTZOOM);
 			mMap.animateCamera(update);
 		}
 	}
@@ -383,57 +348,50 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 			// TO DO: UPDATE MARKERS AND ADD IMAGE TO IT
 			@Override
 			public void done(byte[] data, ParseException e) {
-				if (e == null) {
+				if(e == null) {
 					// First decode with inJustDecodeBounds=true to check
 					// dimensions
 					BitmapFactory.Options options = new BitmapFactory.Options();
 					options.inJustDecodeBounds = true;
-					BitmapFactory
-							.decodeByteArray(data, 0, data.length, options);
+					BitmapFactory.decodeByteArray(data, 0, data.length, options);
+
 					// Calculate inSampleSize
-					options.inSampleSize = DrawingManager
-							.calculateInSampleSize(options, 200, 200);
+					options.inSampleSize = DrawingManager.calculateInSampleSize(options, 200, 200);
+
 					// Decode bitmap with inSampleSize set
 					options.inJustDecodeBounds = false;
-					Bitmap thumbBitmap = BitmapFactory.decodeByteArray(data, 0,
-							data.length, options);
+					Bitmap thumbBitmap = BitmapFactory.decodeByteArray(data, 0, data.length, options);
+
 					// Set this as the thumbnail for the appropriate drawing
-					DrawingManager.getInstance().getCurrentNearbyDrawings()
-							.get(id).setThumbnail(thumbBitmap);
+					DrawingManager.getInstance().getCurrentNearbyDrawings().get(id).setThumbnail(thumbBitmap);
 				} else {
 					e.printStackTrace();
 				}
 			}
-
 		});
 	}
 
 	private void drawRadius(double lat, double lng, int r) {
-		if (radius != null) {
+		if(radius != null) {
 			radius.remove();
 			radius = null;
 		}
 
 		LatLng ll = new LatLng(lat, lng);
 
-		CircleOptions options = new CircleOptions().center(ll).radius(r)
-				.fillColor(0x11FF00FF).strokeColor(Color.BLUE).strokeWidth(3);
+		CircleOptions options = new CircleOptions().center(ll).radius(r).fillColor(0x11FF00FF).strokeColor(Color.BLUE).strokeWidth(3);
 		radius = mMap.addCircle(options);
-
 	}
 
 	private void drawMarkers() {
-		for (DrawingItem drawing : DrawingManager.getInstance()
-				.getCurrentNearbyDrawings().values()) {
-			// only create a marker for a drawing if it has not already been
-			// created
-			if (!(markerIDsToDrawingsIDs.values().contains(drawing.getId()))) {
-
-				MarkerOptions options = new MarkerOptions().title(
-						drawing.getTitle())
+		for(DrawingItem drawing : DrawingManager.getInstance().getCurrentNearbyDrawings().values()) {
+			// only create a marker for a drawing if it has not already been created
+			if(!(markerIDsToDrawingsIDs.values().contains(drawing.getId()))) {
+				MarkerOptions options = new MarkerOptions()
+						.title(drawing.getTitle())
 						.position(new LatLng(
-								drawing.getLocation().getLatitude(), 
-								drawing.getLocation().getLongitude())
+							drawing.getLocation().getLatitude(),
+							drawing.getLocation().getLongitude())
 						)
 						.icon(BitmapDescriptorFactory.fromResource(R.drawable.pencil6));
 
@@ -449,15 +407,14 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 
 		// Delete markers that are no longer nearby (needs to use iterator for
 		// deletion)
-		Iterator<Map.Entry<String, String>> iter = this.markerIDsToDrawingsIDs
-				.entrySet().iterator();
+		Iterator<Map.Entry<String, String>> iter = this.markerIDsToDrawingsIDs.entrySet().iterator();
 
 		while (iter.hasNext()) {
 			Map.Entry<String, String> entry = iter.next();
 
 			// If the drawing associated with a marker is no longer in the
 			// nearby drawings list in DrawingManager...
-			if (!(DrawingManager.getInstance().getCurrentNearbyDrawings()
+			if(!(DrawingManager.getInstance().getCurrentNearbyDrawings()
 					.keySet().contains(entry.getValue()))) {
 				// Get reference to the marker
 				Marker toRemove = this.markerIDsToMarkers.get(entry.getKey());
@@ -474,15 +431,11 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 				// Remove from drawing association hashmap
 				iter.remove();
 			}
-
 		}
 
-		/*Toast.makeText(this,
-				"Drawing Markers: " + this.markerReferences.size(),
-				Toast.LENGTH_SHORT).show();*/
+		/*Toast.makeText(this, "Drawing Markers: " + this.markerReferences.size(), Toast.LENGTH_SHORT).show();*/
 
 		sortMarkerReferencesByDistance();
-
 	}
 
 	// TO DO:
@@ -492,68 +445,54 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 	// Sort the arraylist of marker references by their distance (getting
 	// distances from nearbyDrawings hashmap)
 	private void sortMarkerReferencesByDistance() {
-
 		Collections.sort(markerReferences, new Comparator<Marker>() {
-
 			@Override
 			public int compare(Marker m1, Marker m2) {
 				return Double.compare(
-						DrawingManager.getInstance().getCurrentNearbyDrawings()
-								.get(markerIDsToDrawingsIDs.get(m1.getId()))
-								.getDistInMiles(),
-						DrawingManager.getInstance().getCurrentNearbyDrawings()
-								.get(markerIDsToDrawingsIDs.get(m2.getId()))
-								.getDistInMiles());
+					DrawingManager.getInstance().getCurrentNearbyDrawings()
+						.get(markerIDsToDrawingsIDs.get(m1.getId()))
+						.getDistInMiles(),
+					DrawingManager.getInstance().getCurrentNearbyDrawings()
+						.get(markerIDsToDrawingsIDs.get(m2.getId()))
+						.getDistInMiles()
+				);
 			}
 		});
-
 	}
 
 	@Override
-	public void locationChanged(double lat, double lng,
-			float distanceFromLastLocation, boolean updatedLastLocation) {
-		/*Toast.makeText(
-				this,
-				"Lat: " + lat + " Long: " + lng + " "
-						+ distanceFromLastLocation, Toast.LENGTH_LONG).show();*/
+	public void locationChanged(double lat, double lng, float distanceFromLastLocation, boolean updatedLastLocation) {
+		/*Toast.makeText(this, "Lat: " + lat + " Long: " + lng + " " + distanceFromLastLocation, Toast.LENGTH_LONG).show();*/
 
 		drawRadius(lat, lng, (int) (DrawingManager.radius * 1000));
 
-		if (updatedLastLocation) {
+		if(updatedLastLocation) {
 			loadAndUpdateDrawings();
-			/*Toast.makeText(this, "Updating drawings.", Toast.LENGTH_SHORT)
-					.show();*/
+			/*Toast.makeText(this, "Updating drawings.", Toast.LENGTH_SHORT).show();*/
 		} else {
-			/*Toast.makeText(this,
-					"Not far enough from last location to update drawings.",
-					Toast.LENGTH_SHORT).show();*/
-
+			/*Toast.makeText(this, "Not far enough from last location to update drawings.", Toast.LENGTH_SHORT).show();*/
 		}
 	}
 
 	@Override
 	public void locationUpdatesAvailable() {
-		/*Toast.makeText(this, "Connected to location services",
-				Toast.LENGTH_LONG).show();*/
-		drawRadius(gps.getLastLocation().getLatitude(), gps.getLastLocation()
-				.getLongitude(), (int) (DrawingManager.radius * 1000));
+		/*Toast.makeText(this, "Connected to location services", Toast.LENGTH_LONG).show();*/
+		drawRadius(gps.getLastLocation().getLatitude(), gps.getLastLocation().getLongitude(), (int) (DrawingManager.radius * 1000));
 
 		loadAndUpdateDrawings();
 	}
 
 	private class MyMapTask extends AsyncTask<String, String, String> {
-
 		@Override
 		protected void onPreExecute() {
 			// has access to main thread
 			Log.i("MAIN", "Starting task");
 
 			// DrawingManager.currentDrawings
-			if (DrawingManager.getInstance().getCurrentNearbyDrawings() == null) {
-				if (pbMap != null) {
+			if(DrawingManager.getInstance().getCurrentNearbyDrawings() == null) {
+				if(pbMap != null) {
 					pbMap.setVisibility(View.VISIBLE);
 				}
-
 			}
 		}
 
@@ -573,10 +512,8 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 			// has access to main thread
 			// update display here
 
-			if (result == null) {
-				Toast.makeText(MapActivity.this,
-						"Could not connect to receive drawings",
-						Toast.LENGTH_SHORT).show();
+			if(result == null) {
+				Toast.makeText(MapActivity.this, "Could not connect to receive drawings", Toast.LENGTH_SHORT).show();
 			}
 
 			// Get rid of progress bar
@@ -585,11 +522,9 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 			// drawMarkers
 			drawMarkers();
 
-			// load in each picture one by one (if they have not previously been
-			// loaded)
-			for (DrawingItem d : DrawingManager.getInstance()
-					.getCurrentNearbyDrawings().values()) {
-				if (d.getBitmapFile() != null && d.getThumbnail() == null) {
+			// load in each picture one by one (if they have not previously been loaded)
+			for(DrawingItem d : DrawingManager.getInstance().getCurrentNearbyDrawings().values()) {
+				if(d.getBitmapFile() != null && d.getThumbnail() == null) {
 					loadImageAndUpdateMarker(d.getId(), d.getBitmapFile());
 				}
 			}
@@ -604,7 +539,6 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 		infoWindowIsShowing = false;
 		selectedMarker = null;
 		enableArrows(false);
-
 	}
 
 	@Override
@@ -616,7 +550,7 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 	}
 
 	private void enableArrows(boolean b) {
-		if (b) {
+		if(b) {
 			arrowLeft.setVisibility(View.VISIBLE);
 			arrowRight.setVisibility(View.VISIBLE);
 			arrowLeft.startAnimation(animationFadeIn);
@@ -630,26 +564,20 @@ public class MapActivity extends FragmentActivity implements IGPSActivity,
 	}
 
 	public void onArrowClick(View v) {
-		if (infoWindowIsShowing) {
-
+		if(infoWindowIsShowing) {
 			int nextIndex;
 			switch (v.getId()) {
-			case R.id.map_arrow_left:
-				nextIndex = (markerReferences.indexOf(selectedMarker) - 1)
-						% markerReferences.size();
-				if (nextIndex < 0) {
-					nextIndex += markerReferences.size();
-				}
-				break;
-
-			case R.id.map_arrow_right:
-				nextIndex = Math
-						.abs((markerReferences.indexOf(selectedMarker) + 1)
-								% markerReferences.size());
-				break;
-
-			default:
-				return;
+				case R.id.map_arrow_left:
+					nextIndex = (markerReferences.indexOf(selectedMarker) - 1) % markerReferences.size();
+					if(nextIndex < 0) {
+						nextIndex += markerReferences.size();
+					}
+					break;
+				case R.id.map_arrow_right:
+					nextIndex = Math.abs((markerReferences.indexOf(selectedMarker) + 1) % markerReferences.size());
+					break;
+				default:
+					return;
 			}
 
 			// Toast.makeText(this, "Index is " + nextIndex, Toast.LENGTH_SHORT).show();

@@ -2,8 +2,6 @@ package com.coms309r04.drawnear.views;
 
 import com.coms309r04.drawnear.R;
 import com.parse.GetCallback;
-import com.parse.GetDataCallback;
-import com.parse.ParseAnonymousUtils;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -17,12 +15,10 @@ import com.coms309r04.drawnear.data.DrawingItem;
 import com.coms309r04.drawnear.tools.MyUtils;
 
 import android.app.Activity;
-//import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.SparseBooleanArray;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,7 +28,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -47,7 +42,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
-import android.provider.Settings;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -56,7 +50,6 @@ import android.graphics.BitmapFactory;
 import android.view.View.OnClickListener;
 
 public class CreatePostActivity extends Activity implements OnClickListener, IGPSActivity {
-
 	private GPSManager gps;
 
 	public DrawingView drawView;
@@ -168,11 +161,10 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 				startActivity(intent);
 			} else if (item.getItemId() == MENU_DRAWING_COMPLETED) {
 
-				if (toEdit == null) // Save new post
-				{
+				// Save new post
+				if (toEdit == null) {
 					// Retrieve friends list in background
-					List<ParseUser> friends = (List<ParseUser>) ParseUser
-							.getCurrentUser().get("friendsList");
+					List<ParseUser> friends = (List<ParseUser>) ParseUser.getCurrentUser().get("friendsList");
 
 					if (friends != null) {
 						usernameToID.clear();
@@ -193,7 +185,6 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 									if (adapter != null) {
 										adapter.notifyDataSetChanged();
 									}
-
 								}
 
 							});
@@ -210,16 +201,13 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 					RadioButton selectRecepients = (RadioButton) saveDialog
 							.findViewById(R.id.radio_select_who);
 					selectRecepients.setOnClickListener(new OnClickListener() {
-
 						@Override
 						public void onClick(View v) {
 							selectRecepients();
-
 						}
 					});
 
 					positiveButton.setOnClickListener(new OnClickListener() {
-
 						@Override
 						public void onClick(View v) {
 							// save drawing
@@ -245,8 +233,7 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 								toSave.setBitmapByteArray(data);
 
 								// Drawing name
-								EditText name = (EditText) saveDialog
-										.findViewById(R.id.save_drawing_name);
+								EditText name = (EditText) saveDialog.findViewById(R.id.save_drawing_name);
 								toSave.setTitle(name.getText().toString());
 								toSave.setLocation(gps.getLastLocation());
 								toSave.setCreator(ParseUser.getCurrentUser());
@@ -306,30 +293,21 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 										CreatePostActivity.this,
 										"Unable to find your location. Cannot drop drawing.",
 										Toast.LENGTH_SHORT).show();
-
 							}
-
 						}
-
 					});
-					Button negativeButton = (Button) saveDialog
-							.findViewById(R.id.dialogButtonNegative);
-					negativeButton.setOnClickListener(new OnClickListener() {
 
+					Button negativeButton = (Button) saveDialog.findViewById(R.id.dialogButtonNegative);
+					negativeButton.setOnClickListener(new OnClickListener() {
 						@Override
 						public void onClick(View v) {
 							gps.stopGPS();
 							saveDialog.cancel();
-
 						}
-
 					});
 
 					saveDialog.show();
-				}
-
-				else { // Finished editing drawing
-
+				} else { // Finished editing drawing
 					// Get bitmap from canvas and compress it
 					drawView.setDrawingCacheEnabled(true);
 					Bitmap image = drawView.getDrawingCache();
@@ -339,24 +317,24 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 					image.recycle();
 					image = null;
 
-					final ParseFile bmpFile = new ParseFile(toEdit.getTitle()
-							.toString()
-							+ "_"
-							+ UUID.randomUUID().toString()
-							+ ".bmp", data);
+					final ParseFile bmpFile = new ParseFile(
+						toEdit.getTitle().toString() +
+							"_" +
+							UUID.randomUUID().toString() +
+							".bmp",
+						data
+					);
 
 					// Update ParseFile
 					DrawingManager.getInstance().getCurrentNearbyDrawings()
 							.get(toEdit.getId()).setBitmapFile(bmpFile);
 
-					ParseQuery<ParseObject> query = ParseQuery
-							.getQuery("DrawingItem");
+					ParseQuery<ParseObject> query = ParseQuery.getQuery("DrawingItem");
 					query.getInBackground(toEdit.getId(),
 							new GetCallback<ParseObject>() {
 								public void done(final ParseObject drawing,
 										ParseException e) {
 									if (e == null) {
-
 										bmpFile.saveInBackground(new SaveCallback() {
 											@Override
 											public void done(ParseException e) {
@@ -396,13 +374,11 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 															.get(toEdit.getId())
 															.setThumbnail(
 																	thumbBitmap);
-
 												} else {
 													e.printStackTrace();
 												}
 											}
 										});
-
 									} else {
 										e.printStackTrace();
 									}
@@ -412,9 +388,7 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 					setResult(RESULT_OK, new Intent().putExtra("id", toEdit.getId()));
 					finish();
 				}
-
 			}
-
 		}
 
 		return super.onOptionsItemSelected(item);
@@ -458,17 +432,13 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 					friendsListView.setItemChecked(i, true);
 				}
 			}
-
 		}
 
-		Button ok = (Button) selectRecepientsDialog
-				.findViewById(R.id.select_ok);
+		Button ok = (Button) selectRecepientsDialog.findViewById(R.id.select_ok);
 		ok.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
 				selectRecepientsDialog.dismiss();
-
 			}
 		});
 		selectRecepientsDialog.show();
@@ -484,14 +454,11 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 
 			drawView.setColor(color);
 
-			imgView.setImageDrawable(getResources().getDrawable(
-					R.drawable.paint_pressed));
+			imgView.setImageDrawable(getResources().getDrawable(R.drawable.paint_pressed));
 
-			currPaint.setImageDrawable(getResources().getDrawable(
-					R.drawable.paint));
+			currPaint.setImageDrawable(getResources().getDrawable(R.drawable.paint));
 			currPaint = (ImageButton) view;
 		}
-
 	}
 
 	@Override
@@ -513,8 +480,7 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 					brushDialog.dismiss();
 				}
 			});
-			ImageButton mediumBtn = (ImageButton) brushDialog
-					.findViewById(R.id.medium_brush);
+			ImageButton mediumBtn = (ImageButton) brushDialog.findViewById(R.id.medium_brush);
 			mediumBtn.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {
@@ -615,5 +581,4 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 		 * Toast.LENGTH_SHORT).show();
 		 */
 	}
-
 }
