@@ -9,7 +9,7 @@ import android.content.Intent;
 
 public class TabListener<T extends Activity> implements ActionBar.TabListener {
 	public static boolean tabsActive = false;
-	
+
 	private Class<T> mActivityTo;
 	private Context mActivityFrom;
 
@@ -26,17 +26,15 @@ public class TabListener<T extends Activity> implements ActionBar.TabListener {
 	public TabListener(Context from, Class<T> to) {
 		this.mActivityTo = to;
 		this.mActivityFrom = from;
-		
+
 		tabsActive = false;
 	}
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		
-		if (tabsActive && (this.mActivityTo != this.mActivityFrom.getClass())) {
+		if(tabsActive && (this.mActivityTo != this.mActivityFrom.getClass())) {
 			Intent intent = new Intent(this.mActivityFrom, this.mActivityTo);
-			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
-					| Intent.FLAG_ACTIVITY_NEW_TASK);
+			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 			this.mActivityFrom.startActivity(intent);
 			//((Activity) this.mActivityFrom).overridePendingTransition(0, 0);
 		}

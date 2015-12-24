@@ -312,7 +312,7 @@ MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNea
 	android:allowBackup
 		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:30:9-35
 	android:icon
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:31:9-41
+		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:31:9-43
 	android:theme
 		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:33:9-40
 	android:name

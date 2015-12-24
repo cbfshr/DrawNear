@@ -74,6 +74,7 @@ public class MapActivity
 
 	private static final int GPS_ERRORDIALOG_REQUEST = 9001;
 	private static final int MENU_GET_CURRENT_LOCATION = 9002;
+	private static final int ALLOW_LOCATION_SERVICES = 9999;
 
 	@SuppressWarnings("unused")
 	private static final double ISU_LAT = 42.025410, ISU_LNG = -93.646085;
@@ -100,6 +101,7 @@ public class MapActivity
 
 	GoogleMap mMap;
 	Circle radius;
+	boolean locationUpdatesAvailable = false;
 	// LocationClient mLocationClient;
 
 	private GPSManager gps;
@@ -149,14 +151,12 @@ public class MapActivity
 					ActivityCompat.requestPermissions(
 						this,
 						new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
-						1
+						ALLOW_LOCATION_SERVICES
 					);
+				} else {
+					resetMap();
 				}
 
-				//mMap.setMyLocationEnabled(true);
-				gps = new GPSManager(this);
-
-				drawMarkers();
 				// mLocationClient = new LocationClient(this, this, this);
 				// mLocationClient.connect();
 			} else {
@@ -167,18 +167,58 @@ public class MapActivity
 		}
 	}
 
+	private void resetMap() {
+		gps = new GPSManager(this);
+
+		try {
+			mMap.setMyLocationEnabled(true);
+		} catch(SecurityException e) {
+			Log.e("Map", "Unable to set location enabled");
+		}
+
+		// Get Last Location
+		ParseGeoPoint lastLocation = null;
+		if(gps != null) {
+			lastLocation = gps.getLastLocation();
+		}
+
+		//Draw the circle around last location
+		if(lastLocation != null) {
+			drawRadius(lastLocation.getLatitude(), lastLocation.getLongitude(), (int)(DrawingManager.radius * 1000));
+		}
+
+		// Zoom into location on the map
+		gotoCurrentLocationDefaultZoom();
+
+		// Reload the drawings
+		loadAndUpdateDrawings();
+
+		// Show the markers for all drawings.
+		drawMarkers();
+	}
+
 	@Override
 	public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
 		switch (requestCode) {
-			case 1: {
+			case ALLOW_LOCATION_SERVICES: {
 				// If request is cancelled, the result arrays are empty.
 				if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-					// permission was granted, yay! Do the
-					// contacts-related task you need to do.
-					mMap.setMyLocationEnabled(true);
+					// permission was granted, yay! Do the task you need to do.
+					try {
+						resetMap();
+					} catch(SecurityException e) {
+						Log.e("Map", "Not able to set location.");
+					}
 				} else {
 					// permission denied, boo! Disable the
 					// functionality that depends on this permission.
+					Log.e("Map", "Permissions not granted to use location.");
+
+					// Exit the application
+					/*Intent intent = new Intent(Intent.ACTION_MAIN);
+					intent.addCategory(Intent.CATEGORY_HOME);
+					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					startActivity(intent);*/
 				}
 				return;
 			}
@@ -205,13 +245,13 @@ public class MapActivity
 		// Temporary demo functionality to access all views with the settings menu
 
 		Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
-		if (intent != null) {
+		if(intent != null) {
 			// views that should load "on top" of view
-			if (item.getItemId() != R.id.action_goto_create_post) {
+			if(item.getItemId() != R.id.action_goto_create_post) {
 				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 			}
 			startActivity(intent);
-		} else if (item.getItemId() == MENU_GET_CURRENT_LOCATION) {
+		} else if(item.getItemId() == MENU_GET_CURRENT_LOCATION) {
 			gotoCurrentLocationDefaultZoom();
 			loadAndUpdateDrawings();
 		}
@@ -221,7 +261,9 @@ public class MapActivity
 
 	@Override
 	protected void onStop() {
-		gps.stopGPS();
+		if(gps != null) {
+			gps.stopGPS();
+		}
 		super.onStop();
 		MapManager mgr = new MapManager(this);
 		mgr.saveMapState(mMap);
@@ -229,7 +271,7 @@ public class MapActivity
 
 	@Override
 	protected void onResume() {
-		if (!gps.isRunning()) {
+		if (gps != null && !gps.isRunning()) {
 			gps.resumeGPS();
 		}
 
@@ -245,9 +287,8 @@ public class MapActivity
 
 	private void loadAndUpdateDrawings() {
 		// Get nearby drawings
-		if (gps.getLastLocation() == null) {
-			Toast.makeText(this, "Can't get last location", Toast.LENGTH_SHORT)
-					.show();
+		if (gps != null && gps.getLastLocation() == null) {
+			Toast.makeText(this, "Can't get last location", Toast.LENGTH_SHORT).show();
 		}
 
 		/*Toast.makeText(this, "Checking for new drawings...", Toast.LENGTH_SHORT).show();*/
@@ -287,8 +328,10 @@ public class MapActivity
 						TextView tvDistance = (TextView) v.findViewById(R.id.map_drawing_distance);
 						TextView tvCreator = (TextView) v.findViewById(R.id.map_drawing_creator);
 
-						ImageView ivThumb = (ImageView) v
-								.findViewById(R.id.map_thumbnail);
+						// Image
+						ImageView ivThumb = (ImageView) v.findViewById(R.id.map_thumbnail);
+
+						// Title
 						tvTitle.setText(marker.getTitle());
 
 						DrawingItem d = DrawingManager
@@ -296,19 +339,21 @@ public class MapActivity
 								.getCurrentNearbyDrawings()
 								.get(markerIDsToDrawingsIDs.get(marker.getId()));
 
+						// Distance
 						float miles = (float) d.getDistInMiles();
 						if (miles >= 0.05) {
-							tvDistance.setText(String.format("%.2f", miles) + " miles away");
+							tvDistance.setText(String.format("%.2f", miles) + "mi");
 						} else {
-							tvDistance.setText((int) (miles * 5280) + " feet away");
+							tvDistance.setText((int) (miles * 5280) + "ft");
 						}
 
+						// Creator
 						if (d.getCreator() != null) {
 							ParseUser u = d.getCreator();
 							if (u.getObjectId().equals(ParseUser.getCurrentUser().getObjectId())) {
-								tvCreator.setText("Drawn by you");
+								tvCreator.setText("You");
 							} else {
-								tvCreator.setText("Drawn by " + u.getString("username"));
+								tvCreator.setText(u.getString("username"));
 							}
 						}
 
@@ -328,7 +373,10 @@ public class MapActivity
 	}
 
 	protected void gotoCurrentLocationDefaultZoom() {
-		ParseGeoPoint currentLocation = gps.getLastLocation();
+		ParseGeoPoint currentLocation = null;
+		if(gps != null) {
+			currentLocation = gps.getLastLocation();
+		}
 		if(currentLocation == null) {
 			Toast.makeText(this, "Current location isn't available", Toast.LENGTH_SHORT).show();
 		} else {
@@ -393,7 +441,7 @@ public class MapActivity
 							drawing.getLocation().getLatitude(),
 							drawing.getLocation().getLongitude())
 						)
-						.icon(BitmapDescriptorFactory.fromResource(R.drawable.pencil6));
+						.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pencil4_1024x1024));
 
 				Marker m = mMap.addMarker(options);
 				drawing.setMarkerId(m.getId());
@@ -476,10 +524,20 @@ public class MapActivity
 
 	@Override
 	public void locationUpdatesAvailable() {
-		/*Toast.makeText(this, "Connected to location services", Toast.LENGTH_LONG).show();*/
-		drawRadius(gps.getLastLocation().getLatitude(), gps.getLastLocation().getLongitude(), (int) (DrawingManager.radius * 1000));
+		Toast.makeText(this, "Connected to location services", Toast.LENGTH_LONG).show();
+		ParseGeoPoint lastLocation = null;
+
+		if(gps != null) {
+			lastLocation = gps.getLastLocation();
+		}
+		if(lastLocation != null) {
+			drawRadius(lastLocation.getLatitude(), lastLocation.getLongitude(), (int)(DrawingManager.radius * 1000));
+		}
 
 		loadAndUpdateDrawings();
+
+		gotoCurrentLocationDefaultZoom();
+		//resetMap();
 	}
 
 	private class MyMapTask extends AsyncTask<String, String, String> {
@@ -498,13 +556,19 @@ public class MapActivity
 
 		@Override
 		protected String doInBackground(String... params) {
-			ParseGeoPoint last = gps.getLastLocation();
+			ParseGeoPoint last = null;
+			if(gps != null) {
+				last = gps.getLastLocation();
+			}
 
-			DrawingManager.getInstance().getNearbyDrawings(last, 100);
-			// Delete these drawings :)
-			DrawingManager.getInstance().removeDrawingsNoLongerNearby(last);
+			if(last != null) {
+				DrawingManager.getInstance().getNearbyDrawings(last, 100);
+				// Delete these drawings :)
+				DrawingManager.getInstance().removeDrawingsNoLongerNearby(last);
 
-			return "Success";
+				return "Success";
+			}
+			return "Failure";
 		}
 
 		@Override

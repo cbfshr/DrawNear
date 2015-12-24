@@ -14,14 +14,18 @@ import com.parse.ParseFile;
 import com.parse.ParseGeoPoint;
 import com.parse.ParseUser;
 
+import android.Manifest;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,6 +41,7 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 	ListView listView;
 
 	private static final int MENU_REFRESH_LIST = 9002;
+	private static final int ALLOW_LOCATION_SERVICES = 9999;
 
 	// to do: store drawings and location in separate manager class (so both Map
 	// and Nearby can share it)
@@ -55,10 +60,18 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_nearby);
+
+		// Check if Location is allowed on the device
+		if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions(
+				this,
+				new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+				ALLOW_LOCATION_SERVICES
+			);
+		}
 
 		gps = new GPSManager(this);
-
-		setContentView(R.layout.activity_nearby);
 
 		pb = (ProgressBar) findViewById(R.id.progressBar1);
 		pb.setVisibility(View.VISIBLE);
@@ -75,11 +88,11 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
 		Tab tabNearby = actionBar.newTab().setText("Nearby").setTabListener(new TabListener<NearbyActivity>(this, NearbyActivity.class));
-		actionBar.addTab(tabNearby);	
+		actionBar.addTab(tabNearby);
 		Tab tabMap = actionBar.newTab().setText("Map").setTabListener(new TabListener<MapActivity>(this, MapActivity.class));
 		actionBar.addTab(tabMap);
 		Tab tabFriends = actionBar.newTab().setText("Friends").setTabListener(new TabListener<FriendsActivity>(this, FriendsActivity.class));
-		actionBar.addTab(tabFriends);		
+		actionBar.addTab(tabFriends);
 		actionBar.selectTab(tabNearby);
 
 		TabListener.tabsActive = true;
@@ -104,6 +117,46 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 		// the progress bar
 		if(DrawingManager.getInstance().getCurrentDrawingsList().size() > 0) {
 			pb.setVisibility(View.INVISIBLE);
+		}
+	}
+
+	/**
+	 * This function is a callback function required to handle the result
+	 * from a request permission dialog (in this case, for the user
+	 * allowing the application to use LocationServices.
+	 *
+	 * @param requestCode
+	 * @param permissions
+	 * @param grantResults
+	 */
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+		switch (requestCode) {
+			case ALLOW_LOCATION_SERVICES: {
+				// If request is cancelled, the result arrays are empty.
+				if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+					// permission was granted, yay! Do the task you need to do.
+					try {
+						loadAndUpdateDrawings();
+					} catch(SecurityException e) {
+						Log.e("Map", "Not able to set location.");
+					}
+				} else {
+					// permission denied, boo! Disable the
+					// functionality that depends on this permission.
+					Log.e("Map", "Permissions not granted to use location.");
+
+					// Exit the application
+					/*Intent intent = new Intent(Intent.ACTION_MAIN);
+					intent.addCategory(Intent.CATEGORY_HOME);
+					intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+					startActivity(intent);*/
+				}
+				return;
+			}
+
+			// other 'case' lines to check for other
+			// permissions this app might request
 		}
 	}
 

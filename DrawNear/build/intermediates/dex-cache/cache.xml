@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jar="C:\Users\Cal\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-25b652fd30f0c3236bd69521fb8f43000a150b5f.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-12beec1b1a1e0e9f63b836d58cd946c8c822447d.jar" />
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-51d4dcf0531b8f4f0ea43df338c2536be7045cd6.jar" />
     </item>
     <item
         jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
@@ -23,11 +16,11 @@
         <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-f62432223d9fb42df6f2897f7f6589b92eb43303.jar" />
     </item>
     <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-5e57f8b84cbcc7d7e6c9d833d082ba619e8c340a.jar" />
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-d971c539ef78847291b0eb07c23010da9473aebe.jar" />
     </item>
     <item
         jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
@@ -37,32 +30,11 @@
         <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-6336c5954fa7fb5a2ba6f779efa63855991f9e8a.jar" />
     </item>
     <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-797412f19f383873ad55f81a8431f78531e21095.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-27b9c066b90ca6586c8ba03971b6620b2741ed2f.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="04de44f90606c77f3b28cf44861f306290505aac">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-febf167897d258d3393c89ea643f09fca126045d.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\libs\bolts-android-1.1.3.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-4eca30274bff0d2db80deca3d0e47408dc4239a1.jar" />
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-1d2b35c456bfb815d39c998f7682520c2bf8699b.jar" />
     </item>
     <item
         jar="D:\Projects\DrawNear\DrawNear\app\libs\Parse-1.7.0.jar"
@@ -72,116 +44,11 @@
         <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\Parse-1.7.0-54830d4f59de353ad31752f994023b21f3392b63.jar" />
     </item>
     <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-b6052b48f22e8439f1034cc7d9f4bf943923cc05.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-b7c9c4e38687c33da60b3a921b092b480e420a6d.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-e9ced92bd0d9157268d756bd469e1f64aba23f10.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-441948a299b5db7cf77dc98b47e1b755bce2cd63.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-1d2b35c456bfb815d39c998f7682520c2bf8699b.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-10e4bc396864e53053697d019c25b2c3f9004d94.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-516475c6d2183a3a830da33a55cba4e60f22b06a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Cal\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-51d4dcf0531b8f4f0ea43df338c2536be7045cd6.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-dd7e3810d88f88ad430ef1ae819469844b93c77d.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-c48fe4e7ab11fcd3490266c50cc7171c337f24b0.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-c2f87cc7ae65b83b2f61c00358955e2259dce27a.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-5f491a55fe2745e546619c9864589c70c31207a4.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-ba25f589eaf938181e19bd7118251499a4464515.jar" />
-    </item>
-    <item
         jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
         <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-e0e90eeb13cec3471dda55f5da60eb920d4e69a3.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-0e7b5c5d970a210cfc2a2e0169366e1a06085a8c.jar" />
-    </item>
-    <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-0971eae4b7f7d08b3362c9d34fd11d4afd51a319.jar" />
     </item>
     <item
         jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
@@ -191,18 +58,32 @@
         <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-a8ddb31af9a9b6acde3a0f494fbdd0cfed287659.jar" />
     </item>
     <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-d971c539ef78847291b0eb07c23010da9473aebe.jar" />
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-e9ced92bd0d9157268d756bd469e1f64aba23f10.jar" />
     </item>
     <item
-        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
-        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-c084333566e92d0f5579295041f6bb3d0186e849.jar" />
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-b7c9c4e38687c33da60b3a921b092b480e420a6d.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-dd7e3810d88f88ad430ef1ae819469844b93c77d.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-c2f87cc7ae65b83b2f61c00358955e2259dce27a.jar" />
     </item>
     <item
         jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
@@ -212,11 +93,130 @@
         <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-47e03c20ffdd3fdaa3648bedec22dfa6a2e1a693.jar" />
     </item>
     <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-10e4bc396864e53053697d019c25b2c3f9004d94.jar" />
+    </item>
+    <item
         jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
         <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-8dc37f53835c3f200c6605552d22cfa1a9c1a880.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-febf167897d258d3393c89ea643f09fca126045d.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-c48fe4e7ab11fcd3490266c50cc7171c337f24b0.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-0971eae4b7f7d08b3362c9d34fd11d4afd51a319.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-0e7b5c5d970a210cfc2a2e0169366e1a06085a8c.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-516475c6d2183a3a830da33a55cba4e60f22b06a.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-25b652fd30f0c3236bd69521fb8f43000a150b5f.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-5e57f8b84cbcc7d7e6c9d833d082ba619e8c340a.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-12beec1b1a1e0e9f63b836d58cd946c8c822447d.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-5f491a55fe2745e546619c9864589c70c31207a4.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-c084333566e92d0f5579295041f6bb3d0186e849.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-ba25f589eaf938181e19bd7118251499a4464515.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\libs\bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-4eca30274bff0d2db80deca3d0e47408dc4239a1.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-441948a299b5db7cf77dc98b47e1b755bce2cd63.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-797412f19f383873ad55f81a8431f78531e21095.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-b6052b48f22e8439f1034cc7d9f4bf943923cc05.jar" />
+    </item>
+    <item
+        jar="D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="D:\Projects\DrawNear\DrawNear\app\build\intermediates\pre-dexed\debug\classes-27b9c066b90ca6586c8ba03971b6620b2741ed2f.jar" />
     </item>
 
 </items>

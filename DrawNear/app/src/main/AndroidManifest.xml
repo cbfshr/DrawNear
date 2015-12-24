@@ -28,7 +28,7 @@
     <application
         android:name=".views.DrawNearApplication"
         android:allowBackup="true"
-        android:icon="@drawable/pencil5"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity

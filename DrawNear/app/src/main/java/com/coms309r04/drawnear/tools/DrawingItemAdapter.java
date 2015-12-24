@@ -28,48 +28,52 @@ public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
 
 		// Check if an existing view is being reused, otherwise inflate the view
 		if (convertView == null) {
-			convertView = LayoutInflater.from(getContext()).inflate(
-					R.layout.drawing_information_list_layout, parent, false);
+			convertView = LayoutInflater.from(getContext()).inflate(R.layout.drawing_information_list_layout, parent, false);
 		}
 
 		// Lookup view for data population
-		TextView distance = (TextView) convertView.findViewById(R.id.distance);
-		TextView title = (TextView) convertView.findViewById(R.id.title);
-		TextView creator = (TextView) convertView.findViewById(R.id.creator);
-		ImageView edit = (ImageView) convertView.findViewById(R.id.drawing_edit);
-		TextView privacy = (TextView) convertView.findViewById(R.id.drawing_privacy);
-
 		ImageView imagePreview = (ImageView) convertView.findViewById(R.id.drawing_preview);
+		TextView creator = (TextView) convertView.findViewById(R.id.creator);
+		TextView title = (TextView) convertView.findViewById(R.id.title);
+		TextView distance = (TextView) convertView.findViewById(R.id.distance);
+		//ImageView edit = (ImageView) convertView.findViewById(R.id.drawing_edit);
+		//TextView privacy = (TextView) convertView.findViewById(R.id.drawing_privacy);
 
-		title.setText(drawingItem.getTitle());
-
-		if (drawingItem.getCreator() != null) {
-			ParseUser u = drawingItem.getCreator();
-			if (u.getObjectId().equals(ParseUser.getCurrentUser().getObjectId())) {
-				creator.setText("Drawn by you");
-			} else {
-				creator.setText("Drawn by " + u.getString("username"));
-			}
-		}
-
-		float miles = (float) drawingItem.getDistInMiles();
-		if (miles >= 0.05) {
-			distance.setText(String.format("%.2f", miles) + " miles away");
-		} else {
-			distance.setText((int) (miles * 5280) + " feet away");
-		}
-
+		// Image
 		if (drawingItem.getThumbnail() != null) {
 			imagePreview.setImageBitmap(drawingItem.getThumbnail());
 		}
 
-		if (drawingItem.isEditable()) {
+		// Title
+		title.setText(drawingItem.getTitle());
+
+		// Creator
+		if (drawingItem.getCreator() != null) {
+			ParseUser u = drawingItem.getCreator();
+			if (u.getObjectId().equals(ParseUser.getCurrentUser().getObjectId())) {
+				creator.setText("You");
+			} else {
+				creator.setText(u.getString("username"));
+			}
+		}
+
+		// Distance
+		float miles = (float) drawingItem.getDistInMiles();
+		if (miles >= 0.05) {
+			distance.setText(String.format("%.2f", miles) + "mi");
+		} else {
+			distance.setText((int) (miles * 5280) + "ft");
+		}
+
+		// Editability
+		/*if (drawingItem.isEditable()) {
 			edit.setVisibility(View.VISIBLE);
 		} else {
 			edit.setVisibility(View.INVISIBLE);
-		}
+		}*/
 
-		if (drawingItem.getPrivacy() != null) {
+		// Privacy Level
+		/*if(drawingItem.getPrivacy() != null) {
 			switch (drawingItem.getPrivacy()) {
 			case PUBLIC:
 				privacy.setText("Public");
@@ -86,7 +90,7 @@ public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
 			}
 		} else {
 			privacy.setText("Public");
-		}
+		}*/
 
 		// Return the completed view to render on screen
 		return convertView;

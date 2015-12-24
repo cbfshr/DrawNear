@@ -16,68 +16,68 @@ import android.util.Log;
 import android.widget.Toast;
 
 public class GPSManager {
-    private IGPSActivity main;
+	private IGPSActivity main;
 
-    // Helper for GPS-Position
-    private MyLocationListener mlocListener;
-    private LocationRequest request;
-    
-    private boolean isRunning;
+	// Helper for GPS-Position
+	private MyLocationListener mlocListener;
+	private LocationRequest request;
 
-    private Location lastUpdateLocation = null;
-    
-    public GPSManager(Context main) {
-        this.main = (IGPSActivity)main;
+	private boolean isRunning;
 
-        mlocListener = new MyLocationListener(main);
+	private Location lastUpdateLocation = null;
+
+	public GPSManager(Context main) {
+		this.main = (IGPSActivity)main;
+
+		mlocListener = new MyLocationListener(main);
 		request = LocationRequest.create();
 		request.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 		request.setInterval(20000);
 		request.setFastestInterval(5000);
 
-        this.isRunning = true;
-    }
+		this.isRunning = true;
+	}
 
-    public void stopGPS() {
-        if(isRunning) {
-            mlocListener.stopLocationUpdates();
-            this.isRunning = false;
-        }
-    }
+	public void stopGPS() {
+		if(isRunning) {
+			mlocListener.stopLocationUpdates();
+			this.isRunning = false;
+		}
+	}
 
-    public void resumeGPS() {
-        mlocListener.startLocationUpdates();
-        this.isRunning = true;
-    }
+	public void resumeGPS() {
+		mlocListener.startLocationUpdates();
+		this.isRunning = true;
+	}
 
-    public boolean isRunning() {
-        return this.isRunning;
-    }
+	public boolean isRunning() {
+		return this.isRunning;
+	}
 
-    public ParseGeoPoint getLastLocation(){
+	public ParseGeoPoint getLastLocation(){
 		Location last = mlocListener.getLastLocation();
-    	if (last == null){
-    		Log.e("GPS", "Cannot retrieve last known location");
-    		return null;
-    	}
+		if (last == null){
+			Log.e("GPS", "Cannot retrieve last known location");
+			return null;
+		}
 		return new ParseGeoPoint(last.getLatitude(), last.getLongitude());	
-    }
-    
-    public IGPSActivity getMain() {
+	}
+
+	public IGPSActivity getMain() {
 		return this.main;
 	}
 
-	private class MyLocationListener implements
+	private class MyLocationListener
+		implements
 		ConnectionCallbacks,
 		OnConnectionFailedListener,
 		LocationListener {
 
-        private final String TAG = MyLocationListener.class.getSimpleName();
+		private final String TAG = MyLocationListener.class.getSimpleName();
 
-        //LocationClient mlocationClient;
-        GoogleApiClient mGoogleApiClient;
+		GoogleApiClient mGoogleApiClient;
 
-        public MyLocationListener(Context main) {
+		public MyLocationListener(Context main) {
 			if (mGoogleApiClient == null) {
 				mGoogleApiClient = new GoogleApiClient.Builder(main)
 						.addConnectionCallbacks(this)
@@ -86,7 +86,7 @@ public class GPSManager {
 						.build();
 				mGoogleApiClient.connect();
 			}
-        }
+		}
 
 		public void stopLocationUpdates() {
 			if(mGoogleApiClient != null) {
@@ -151,5 +151,5 @@ public class GPSManager {
 			// TODO Auto-generated method stub
 			Log.i(TAG, "GoogleApiClient connection has been suspend");
 		}
-    }
+	}
 }

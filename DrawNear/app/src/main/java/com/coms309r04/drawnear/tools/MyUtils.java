@@ -1,4 +1,5 @@
 package com.coms309r04.drawnear.tools;
+
 import com.coms309r04.drawnear.R;
 import com.coms309r04.drawnear.views.CreatePostActivity;
 import com.coms309r04.drawnear.views.DispatchActivity;
@@ -14,8 +15,7 @@ public class MyUtils {
 	//Return an Intent to each view (activity) based on selecting that view from the options menu
 	//This is a helper method to easily navigate between pages for initial demoing purposes.
 	//It will not be in the final application
-	public static Intent onOptionsNavigationSelected(int id,
-			Context fromActivity) {
+	public static Intent onOptionsNavigationSelected(int id, Context fromActivity) {
 		Intent intent = null;
 		switch (id) {
 		/*case R.id.action_goto_nearby:
@@ -38,10 +38,10 @@ public class MyUtils {
 			break;*/	
 		case R.id.action_logout:
 			ParseUser.logOut();
-	        // Start and intent for the dispatch activity
-	        intent = new Intent(fromActivity, DispatchActivity.class);
+			// Start and intent for the dispatch activity
+			intent = new Intent(fromActivity, DispatchActivity.class);
 			break;
-				
+
 		default:
 			break;
 		}
