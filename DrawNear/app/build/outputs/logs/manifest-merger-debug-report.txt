@@ -1,554 +1,558 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:2:1-101:12
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:2:1-102:12
 	xmlns:android
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:2:11-69
 	package
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:3:5-38
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:3:2-35
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:5:5-30
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:5:2-27
 	android:versionCode
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:4:5-28
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:4:2-25
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appstate:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-cast:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:mediarouter-v7:23.0.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-fitness:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-games:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-panorama:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-plus:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-vision:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-wallet:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-wearable:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:7:2-9:35
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:23.0.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-games:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-wallet:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:9:9-38
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:9:3-32
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:8:9-35
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:8:3-29
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
 permission#com.coms309r04.drawnear.permission.MAPS_RECEIVE
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:11:5-13:47
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:11:2-13:41
 	android:protectionLevel
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:13:9-44
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:13:3-38
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:12:9-71
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:12:3-65
 uses-permission#com.coms309r04.drawnear.permission.MAPS_RECEIVE
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:15:5-87
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:15:2-84
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:15:22-84
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:15:19-81
 uses-permission#android.permission.INTERNET
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:16:5-67
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:19:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:16:2-64
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:19:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:21:5-66
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:16:22-64
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:16:19-61
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:17:5-79
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\AndroidManifest.xml:19:5-79
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:17:2-76
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:20:5-78
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:17:22-76
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:17:19-73
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:18:5-81
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:18:2-78
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:18:22-78
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:18:19-75
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:19:5-98
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:19:2-95
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:19:22-95
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:19:19-92
 uses-feature#0x00020000
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:21:5-23:35
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:21:2-23:29
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:22:5-24:33
 	android:required
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:23:9-32
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:23:3-26
 	android:glEsVersion
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:22:3-35
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:25:5-81
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:25:2-78
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:25:22-78
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:25:19-75
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:26:5-79
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:26:2-76
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:26:22-76
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:26:19-73
 application
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:28:5-99:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:20:5-30:19
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appstate:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-cast:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:mediarouter-v7:23.0.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-fitness:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-games:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:26:5-46:19
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:26:5-46:19
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-nearby:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\AndroidManifest.xml:20:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-panorama:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-plus:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-vision:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-wearable:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:28:2-100:16
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appstate:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-cast:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-fitness:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-games:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:26:5-46:19
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-nearby:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-panorama:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-plus:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-vision:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:32:9-41
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:32:3-35
 	android:allowBackup
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:30:9-35
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:30:3-29
 	android:icon
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:31:9-43
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:31:3-37
 	android:theme
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:33:9-40
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:33:3-34
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:29:9-50
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:29:3-44
 activity#com.coms309r04.drawnear.views.DispatchActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:34:9-42:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:34:3-41:14
 	android:noHistory
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:36:4-28
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:35:13-51
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:35:4-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:37:13-41:29
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:37:4-40:20
 action#android.intent.action.MAIN
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:38:17-69
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:38:5-57
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:38:13-54
 category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:40:17-77
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:39:5-65
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:40:27-74
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:39:15-62
 activity#com.coms309r04.drawnear.views.NearbyActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:43:9-46:52
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:42:3-45:43
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:46:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:45:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:45:13-58
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:44:4-49
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:44:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:43:4-40
 activity#com.coms309r04.drawnear.views.WelcomeActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:47:9-50:52
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:46:3-49:43
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:50:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:49:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:49:13-57
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:48:4-48
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:48:13-50
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:47:4-41
 activity#com.coms309r04.drawnear.views.LoginActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:51:9-54:52
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:50:3-53:43
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:54:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:53:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:53:13-57
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:52:4-48
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:52:13-48
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:51:4-39
 activity#com.coms309r04.drawnear.views.SignUpActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:55:9-58:52
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:54:3-57:43
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:58:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:57:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:57:13-58
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:56:4-49
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:55:4-40
 activity#com.coms309r04.drawnear.views.MapActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:59:9-63:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:58:3-62:14
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:62:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:61:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:61:13-55
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:60:4-46
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:60:13-46
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:59:4-37
 activity#com.coms309r04.drawnear.views.ProfileActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:64:9-68:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:63:3-67:14
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:67:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:66:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:66:13-59
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:65:4-50
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:65:13-50
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:64:4-41
 activity#com.coms309r04.drawnear.views.SettingsActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:69:9-73:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:68:3-72:14
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:72:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:71:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:71:13-60
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:70:4-51
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:70:13-51
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:69:4-42
 activity#com.coms309r04.drawnear.views.DisplayPostActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:74:9-78:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:73:3-78:14
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:77:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:76:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:76:13-64
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:75:4-32
+	android:theme
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:77:4-43
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:75:13-54
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:74:4-45
 activity#com.coms309r04.drawnear.views.CreatePostActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:79:9-83:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:79:3-83:14
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:82:13-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:82:4-40
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:81:13-63
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:81:4-54
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:80:13-53
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:80:4-44
 activity#com.coms309r04.drawnear.views.AccountActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:84:9-85:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:84:3-85:14
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:84:19-56
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:84:13-50
 activity#com.coms309r04.drawnear.views.AccountUpdateActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:86:9-87:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:86:3-87:14
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:86:19-62
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:86:13-56
 activity#com.coms309r04.drawnear.views.FriendsActivity
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:88:9-91:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:88:3-92:14
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:90:13-59
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:90:4-50
+	android:parentActivityName
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:91:4-78
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:89:13-73
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:89:4-64
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:93:9-95:72
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:94:3-96:63
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:94:13-62
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:95:4-53
 	android:value
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:95:13-69
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:96:4-60
 meta-data#com.google.android.gms.version
-ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:96:9-98:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:97:3-99:60
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:97:13-58
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:98:4-49
 	android:value
-		ADDED from D:\Projects\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:98:13-66
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:99:4-57
 activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:26:9-29:64
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:28:13-122
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:28:13-122
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:29:13-61
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:29:13-61
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:27:13-65
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:27:13-65
 activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:30:9-31:52
+ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:30:9-31:52
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:31:13-50
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:30:19-91
+		ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:30:19-91
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:21:9-29:20
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:21:9-29:20
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:24:17-63
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:24:17-63
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:23:17-40
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:23:17-40
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:22:17-48
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:22:17-48
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:25:13-28:29
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:25:13-28:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:26:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:26:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:26:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:26:25-87
 category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:27:17-75
+ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:27:17-75
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:27:27-73
+		ADDED from [com.google.android.gms:play-services-appinvite:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\AndroidManifest.xml:27:27-73
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:21:9-24:46
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:21:9-24:46
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:22:19-78
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:22:19-78
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:24:19-43
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:24:19-43
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:23:19-52
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:23:19-52
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:21:19-72
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:21:19-72
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:28:9-31:110
+ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:28:9-31:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:30:13-36
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:31:13-107
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:31:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:29:13-62
+		ADDED from [com.google.android.gms:play-services-auth:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\AndroidManifest.xml:29:13-62
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:21:5-82
+ADDED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:21:5-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:21:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\AndroidManifest.xml:21:22-79
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:24:22-65
 provider#com.google.android.gms.measurement.AppMeasurementContentProvider
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:28:7-31:37
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:28:7-31:37
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:28:7-31:37
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:28:7-31:37
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:31:11-35
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:31:11-35
 	android:authorities
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:29:11-76
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:29:11-76
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:30:11-90
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:30:11-90
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:33:7-39:18
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:33:7-39:18
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:33:7-39:18
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:33:7-39:18
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:35:11-33
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:35:11-33
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:34:11-83
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:34:11-83
 intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:36:9-38:25
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:36:9-38:25
 action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:37:11-77
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:37:11-77
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:37:19-75
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:37:19-75
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:41:7-44:37
-MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:41:7-44:37
+ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:41:7-44:37
+MERGED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:41:7-44:37
 	android:exported
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:44:11-35
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:44:11-35
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:43:11-33
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:43:11-33
 	android:name
-		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:42:11-82
+		ADDED from [com.google.android.gms:play-services-measurement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\AndroidManifest.xml:42:11-82

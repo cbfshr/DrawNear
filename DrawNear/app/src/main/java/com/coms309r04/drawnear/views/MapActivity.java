@@ -121,8 +121,6 @@ public class MapActivity
 		actionBar.addTab(tabNearby);	
 		Tab tabMap = actionBar.newTab().setText("Map").setTabListener(new TabListener<MapActivity>(this, MapActivity.class));
 		actionBar.addTab(tabMap);
-		Tab tabFriends = actionBar.newTab().setText("Friends").setTabListener(new TabListener<FriendsActivity>(this, FriendsActivity.class));
-		actionBar.addTab(tabFriends);
 		actionBar.selectTab(tabMap);
 
 		TabListener.tabsActive = true;
@@ -441,7 +439,7 @@ public class MapActivity
 							drawing.getLocation().getLatitude(),
 							drawing.getLocation().getLongitude())
 						)
-						.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pencil4_1024x1024));
+						.icon(BitmapDescriptorFactory.fromResource(R.drawable.pencil6));
 
 				Marker m = mMap.addMarker(options);
 				drawing.setMarkerId(m.getId());

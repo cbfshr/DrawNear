@@ -17,7 +17,9 @@ import com.parse.SaveCallback;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ActionBar.Tab;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,20 +46,20 @@ public class FriendsActivity extends Activity {
 
 		TextView loggedInAs = (TextView) findViewById(R.id.logged_in_as_friends);
 		loggedInAs.setText(ParseUser.getCurrentUser().getUsername());
-
-		//Set up ActionBar Tabs
-		ActionBar actionBar = getActionBar();
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
-		Tab tabNearby = actionBar.newTab().setText("Nearby").setTabListener(new TabListener<NearbyActivity>(this, NearbyActivity.class));
-		actionBar.addTab(tabNearby);	
-		Tab tabMap = actionBar.newTab().setText("Map").setTabListener(new TabListener<MapActivity>(this, MapActivity.class));
-		actionBar.addTab(tabMap);
-		Tab tabFriends = actionBar.newTab().setText("Friends").setTabListener(new TabListener<FriendsActivity>(this, FriendsActivity.class));
-		actionBar.addTab(tabFriends);
-
-		actionBar.selectTab(tabFriends);
-		TabListener.tabsActive = true;
+//
+//		//Set up ActionBar Tabs
+//		ActionBar actionBar = getActionBar();
+//		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+//
+//		Tab tabNearby = actionBar.newTab().setText("Nearby").setTabListener(new TabListener<NearbyActivity>(this, NearbyActivity.class));
+//		actionBar.addTab(tabNearby);
+//		Tab tabMap = actionBar.newTab().setText("Map").setTabListener(new TabListener<MapActivity>(this, MapActivity.class));
+//		actionBar.addTab(tabMap);
+//		Tab tabFriends = actionBar.newTab().setText("Friends").setTabListener(new TabListener<FriendsActivity>(this, FriendsActivity.class));
+//		actionBar.addTab(tabFriends);
+//
+//		actionBar.selectTab(tabFriends);
+//		TabListener.tabsActive = true;
 
 		getFriends();
 	}
@@ -72,7 +74,16 @@ public class FriendsActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Temporary demo functionality to access all views with the settings menu
-		startActivity(MyUtils.onOptionsNavigationSelected(item.getItemId(), this));
+		switch(item.getItemId()) {
+			case(android.R.id.home):
+				NavUtils.navigateUpFromSameTask(this);
+				return true;
+			default:
+				Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
+				if(intent != null) {
+					startActivity(intent);
+				}
+		}
 		return super.onOptionsItemSelected(item);
 	}
 

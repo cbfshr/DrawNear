@@ -78,8 +78,9 @@
         </activity>
         <activity
             android:name="com.coms309r04.drawnear.views.DisplayPostActivity"
-            android:label="@string/title_activity_display_post"
-            android:screenOrientation="portrait" >
+            android:label="@string/back"
+            android:screenOrientation="portrait"
+            android:theme="@style/DisplayPostTheme" >
         </activity>
         <activity
             android:name="com.coms309r04.drawnear.views.CreatePostActivity"
@@ -92,7 +93,8 @@
         </activity>
         <activity
             android:name="com.coms309r04.drawnear.views.FriendsActivity"
-            android:label="@string/title_activity_friends" >
+            android:label="@string/title_activity_friends"
+            android:parentActivityName="com.coms309r04.drawnear.views.ProfileActivity" >
         </activity>
 
         <meta-data

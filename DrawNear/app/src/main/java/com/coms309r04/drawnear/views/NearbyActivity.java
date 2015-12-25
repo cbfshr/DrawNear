@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -80,22 +81,25 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 		noContent.setVisibility(View.INVISIBLE);
 		noContent.setText("There are no drawings nearby.\nMake one and be the first!");
 
-		TextView loggedInAs = (TextView) findViewById(R.id.logged_in_as_nearby);
-		loggedInAs.setText(ParseUser.getCurrentUser().getUsername());
+		//TextView loggedInAs = (TextView) findViewById(R.id.logged_in_as_nearby);
+		//loggedInAs.setText(ParseUser.getCurrentUser().getUsername());
 
 		//Set up ActionBar Tabs
 		ActionBar actionBar = getActionBar();
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		if(actionBar != null) {
+			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-		Tab tabNearby = actionBar.newTab().setText("Nearby").setTabListener(new TabListener<NearbyActivity>(this, NearbyActivity.class));
-		actionBar.addTab(tabNearby);
-		Tab tabMap = actionBar.newTab().setText("Map").setTabListener(new TabListener<MapActivity>(this, MapActivity.class));
-		actionBar.addTab(tabMap);
-		Tab tabFriends = actionBar.newTab().setText("Friends").setTabListener(new TabListener<FriendsActivity>(this, FriendsActivity.class));
-		actionBar.addTab(tabFriends);
-		actionBar.selectTab(tabNearby);
+			Tab tabNearby = actionBar.newTab().setText("Nearby").setTabListener(new TabListener<NearbyActivity>(this, NearbyActivity.class));
+			actionBar.addTab(tabNearby);
 
-		TabListener.tabsActive = true;
+			Tab tabMap = actionBar.newTab().setText("Map").setTabListener(new TabListener<MapActivity>(this, MapActivity.class));
+			actionBar.addTab(tabMap);
+
+			//actionBar.setStackedBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black)));
+			actionBar.selectTab(tabNearby);
+
+			TabListener.tabsActive = true;
+		}
 
 		//Set up ListView
 		if(drawingAdapter == null) {
@@ -300,11 +304,8 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 
 			drawingAdapter.notifyDataSetChanged(); // refresh list view
 
-			// load in each picture one by one (if they have not previously
-			// been
-			// loaded)
-			for(DrawingItem d : DrawingManager.getInstance()
-					.getCurrentNearbyDrawings().values()) {
+			// load in each picture one by one (if they have not previously been loaded)
+			for(DrawingItem d : DrawingManager.getInstance().getCurrentNearbyDrawings().values()) {
 				if(d.getBitmapFile() != null && d.getThumbnail() == null) {
 					loadImageAtListPosition(d.getId(), d.getBitmapFile());
 				}
