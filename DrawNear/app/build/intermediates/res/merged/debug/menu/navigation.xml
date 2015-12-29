@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-	<!-- <item
+	<item
 		android:id="@+id/action_goto_nearby"
 		android:orderInCategory="0"
-		android:showAsAction="never"
+		android:showAsAction="collapseActionView"
 		android:title="@string/action_goto_nearby">
 	</item>
-	<item
-		android:id="@+id/action_goto_map"
-		android:orderInCategory="1"
-		android:showAsAction="never"
-		android:title="@string/action_goto_map">
-	</item>-->
+	<!--<item-->
+		<!--android:id="@+id/action_goto_map"-->
+		<!--android:orderInCategory="1"-->
+		<!--android:showAsAction="collapseActionView"-->
+		<!--android:title="@string/action_goto_map">-->
+	<!--</item>-->
 	<!--<item-->
 		<!--android:id="@+id/action_goto_profile"-->
 		<!--android:orderInCategory="2"-->
@@ -43,6 +43,14 @@
 		android:showAsAction="collapseActionView"
 		android:title="@string/logout">
 	</item>
+
+	<!--<item-->
+		<!--android:id="@+id/action_slide"-->
+		<!--android:orderInCategory="6"-->
+		<!--android:showAsAction="collapseActionView"-->
+		<!--android:title="Slide">-->
+	<!--</item>-->
+
 
 </menu>
 <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/menu/navigation.xml -->

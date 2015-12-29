@@ -3,8 +3,6 @@ package com.coms309r04.drawnear.connection;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -30,19 +28,18 @@ public class DrawingManager {
 	};
 
 	public static final double ISU_LAT = 42.025420, ISU_LNG = -93.646085;
-	public static double radius = 0.8;
+	public static double radius = 5;
 
 	/*
-	 * Helps to debug drawings out of range int call_count_1 = 0; int
-	 * call_count_2 = 0;
+	 * Helps to debug drawings out of range
+	 * int call_count_1 = 0;
+	 * int call_count_2 = 0;
 	 */
 
-	// updates currentDrawingsList with new drawings from the server (only gives
-	// us new drawings)
+	// updates currentDrawingsList with new drawings from the server (only gives us new drawings)
 	// call this method in an AsyncTask
 	// also adds new drawing to ArrayList to display if it isn't in it currently
 	public void getNearbyDrawings(ParseGeoPoint location, int numberOfDrawings) {
-
 		List<ParseObject> parseObjectList = new ArrayList<ParseObject>();
 		List<String> currentDrawingsKeys = new ArrayList<String>();
 
@@ -68,7 +65,7 @@ public class DrawingManager {
 		try {
 			parseObjectList = ParseCloud.callFunction("nearbyDrawings", params);
 
-			Log.i("MAIN", "Retreived from Parse: " + parseObjectList.size() + " drawings within " + radius + " km");
+			Log.i("MAIN", "Retrieved from Parse: " + parseObjectList.size() + " drawings within " + radius + " km");
 
 			for (final ParseObject p : parseObjectList) {
 				// Log the returned objects
@@ -84,16 +81,16 @@ public class DrawingManager {
 
 				if (p.get("privacy") != null) {
 					if (p.get("privacy").equals("Public")) {
-						d.setPrivacy(DrawingItem.PRIV_TYPE.PUBLIC);
+						d.setPrivacy(DrawingItem.PRIVACY_TYPE.PUBLIC);
 					} else if (p.get("privacy").equals("Friends")) {
-						d.setPrivacy(DrawingItem.PRIV_TYPE.FRIENDS);
+						d.setPrivacy(DrawingItem.PRIVACY_TYPE.FRIENDS);
 					} else if (p.get("privacy").equals("Private")) {
-						d.setPrivacy(DrawingItem.PRIV_TYPE.PRIVATE);
+						d.setPrivacy(DrawingItem.PRIVACY_TYPE.PRIVATE);
 					} else {
-						d.setPrivacy(DrawingItem.PRIV_TYPE.PUBLIC);
+						d.setPrivacy(DrawingItem.PRIVACY_TYPE.PUBLIC);
 					}
 				} else {
-					d.setPrivacy(DrawingItem.PRIV_TYPE.PUBLIC);
+					d.setPrivacy(DrawingItem.PRIVACY_TYPE.PUBLIC);
 				}
 
 				// load the image to the drawingItem of the location in
@@ -120,10 +117,10 @@ public class DrawingManager {
 				new Comparator<DrawingItem>() {
 					@Override
 					public int compare(DrawingItem d1, DrawingItem d2) {
-						return Double.compare(d1.getDistInMiles(),
-								d2.getDistInMiles());
+						return Double.compare(d1.getDistanceInMiles(), d2.getDistanceInMiles());
 					}
-				});
+				}
+			);
 		}
 	}
 
@@ -237,7 +234,7 @@ public class DrawingManager {
 			case PRIVATE:
 				drawing.put("privacy", "Private");
 				// TO: the drawing is intended for a list of private recipients
-				ArrayList<String> recep = d.getPrivateRecepientIDs();
+				ArrayList<String> recep = d.getPrivateRecipientIDs();
 				if (recep != null) {
 					acl.setPublicReadAccess(false);
 					for (String id : recep) {
@@ -272,8 +269,7 @@ public class DrawingManager {
 
 		// Create ParseFile from bmp. This saving process should be improved.
 		// Currently, the drawing is not saved until the bmp is saved
-		final ParseFile bmpFile = new ParseFile(d.getTitle().toString() + "_"
-				+ UUID.randomUUID().toString() + ".bmp", d.getBitmapByteArray());
+		final ParseFile bmpFile = new ParseFile(d.getTitle().toString() + "_" + UUID.randomUUID().toString() + ".bmp", d.getBitmapByteArray());
 		bmpFile.saveInBackground(new SaveCallback() {
 			@Override
 			public void done(ParseException e) {
@@ -294,8 +290,7 @@ public class DrawingManager {
 
 	private void updateDrawingDistances(ParseGeoPoint location) {
 		for (DrawingItem drawingItem : currentDrawings.values()) {
-			drawingItem.setDistInMiles(drawingItem.getLocation()
-					.distanceInMilesTo(location));
+			drawingItem.setDistanceInMiles(drawingItem.getLocation().distanceInMilesTo(location));
 		}
 
 		this.sortDrawingsListByDistance();
@@ -314,8 +309,9 @@ public class DrawingManager {
 	final private ArrayList<DrawingItem> currentDrawingsList = new ArrayList<DrawingItem>();
 
 	public static DrawingManager getInstance() {
-		if (instance == null)
+		if(instance == null) {
 			instance = new DrawingManager();
+		}
 		return instance;
 	}
 
@@ -323,8 +319,7 @@ public class DrawingManager {
 		this.currentDrawings = new HashMap<String, DrawingItem>();
 	}
 
-	public void updateCurrentDrawings(
-			HashMap<String, DrawingItem> updatedDrawings) {
+	public void updateCurrentDrawings(HashMap<String, DrawingItem> updatedDrawings) {
 		this.currentDrawings = updatedDrawings;
 	}
 
@@ -361,8 +356,7 @@ public class DrawingManager {
 			// Calculate the largest inSampleSize value that is a power of 2 and
 			// keeps both
 			// height and width larger than the requested height and width.
-			while ((halfHeight / inSampleSize) > reqHeight
-					&& (halfWidth / inSampleSize) > reqWidth) {
+			while ((halfHeight / inSampleSize) > reqHeight && (halfWidth / inSampleSize) > reqWidth) {
 				inSampleSize *= 2;
 			}
 		}

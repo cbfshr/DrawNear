@@ -3,7 +3,7 @@ package com.coms309r04.drawnear.views;
 import com.coms309r04.drawnear.R;
 import com.coms309r04.drawnear.R.id;
 
-import com.coms309r04.drawnear.tools.MyUtils;
+import com.coms309r04.drawnear.tools.IntentSwitcher;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,8 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 public class ProfileActivity extends Activity {
 	@Override
@@ -58,7 +56,7 @@ public class ProfileActivity extends Activity {
 				NavUtils.navigateUpTo(this, intent1);
 				return true;
 			default:
-				Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
+				Intent intent = IntentSwitcher.onOptionsNavigationSelected(item.getItemId(), this);
 				if(intent != null) {
 					startActivity(intent);
 				}

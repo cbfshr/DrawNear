@@ -1,60 +1,67 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SignUpActivity" >
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context=".SignUpActivity" >
 
-    <!-- Login form -->
+	<ScrollView
+		android:id="@+id/signup_form"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
 
-    <ScrollView
-        android:id="@+id/signup_form"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingTop="64dp"
+			android:paddingLeft="64dp"
+			android:paddingRight="64dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical" >
+			<ImageView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_logo" />
 
-            <EditText
-                android:id="@+id/username_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Username"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:singleLine="true" />
+			<EditText
+				android:id="@+id/username_edit_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Username"
+				android:inputType="textEmailAddress"
+				android:maxLines="1"
+				android:singleLine="true" />
 
-            <EditText
-                android:id="@+id/password_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLine="true" />
-            
-            <EditText
-                android:id="@+id/password_again_edit_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password Again"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:imeActionId="@+id/edittext_action_signup"
-                android:imeActionLabel="Sign Up"
-                android:imeOptions="actionUnspecified" />
+			<EditText
+				android:id="@+id/password_edit_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Password"
+				android:inputType="textPassword"
+				android:maxLines="1"
+				android:singleLine="true" />
 
-            <Button
-                android:id="@+id/action_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="16dp"
-                android:paddingLeft="32dp"
-                android:paddingRight="32dp"
-                android:text="Sign Up" />
-        </LinearLayout>
-    </ScrollView>
+			<EditText
+				android:id="@+id/password_again_edit_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Password Again"
+				android:inputType="textPassword"
+				android:maxLines="1"
+				android:singleLine="true"
+				android:imeActionId="@+id/edittext_action_signup"
+				android:imeActionLabel="Sign Up"
+				android:imeOptions="actionUnspecified" />
+
+			<Button
+				android:id="@+id/action_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="16dp"
+				android:paddingLeft="32dp"
+				android:paddingRight="32dp"
+				android:text="Sign Up" />
+
+		</LinearLayout>
+
+	</ScrollView>
 
 </merge>

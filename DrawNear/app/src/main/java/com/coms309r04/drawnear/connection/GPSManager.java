@@ -13,10 +13,12 @@ import android.content.Context;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 public class GPSManager {
-	private IGPSActivity main;
+	private static double ISU_LAT = 42.025410, ISU_LNG = -93.646085;
+
+	private Context main;
+	private ILocationUpdater fragment = null;
 
 	// Helper for GPS-Position
 	private MyLocationListener mlocListener;
@@ -26,16 +28,21 @@ public class GPSManager {
 
 	private Location lastUpdateLocation = null;
 
-	public GPSManager(Context main) {
-		this.main = (IGPSActivity)main;
+	public GPSManager(Context activity) {
+		this.main = activity;
 
-		mlocListener = new MyLocationListener(main);
+		mlocListener = new MyLocationListener(activity);
 		request = LocationRequest.create();
 		request.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 		request.setInterval(20000);
 		request.setFastestInterval(5000);
 
 		this.isRunning = true;
+	}
+
+	public GPSManager(Context activity, ILocationUpdater fragment) {
+		this(activity);
+		this.fragment = fragment;
 	}
 
 	public void stopGPS() {
@@ -60,18 +67,15 @@ public class GPSManager {
 			Log.e("GPS", "Cannot retrieve last known location");
 			return null;
 		}
-		return new ParseGeoPoint(last.getLatitude(), last.getLongitude());	
+		return new ParseGeoPoint(last.getLatitude(), last.getLongitude());
 	}
 
-	public IGPSActivity getMain() {
+	public Context getMain() {
 		return this.main;
 	}
 
 	private class MyLocationListener
-		implements
-		ConnectionCallbacks,
-		OnConnectionFailedListener,
-		LocationListener {
+		implements ConnectionCallbacks, OnConnectionFailedListener, LocationListener {
 
 		private final String TAG = MyLocationListener.class.getSimpleName();
 
@@ -80,10 +84,10 @@ public class GPSManager {
 		public MyLocationListener(Context main) {
 			if (mGoogleApiClient == null) {
 				mGoogleApiClient = new GoogleApiClient.Builder(main)
-						.addConnectionCallbacks(this)
-						.addOnConnectionFailedListener(this)
-						.addApi(LocationServices.API)
-						.build();
+					.addConnectionCallbacks(this)
+					.addOnConnectionFailedListener(this)
+					.addApi(LocationServices.API)
+					.build();
 				mGoogleApiClient.connect();
 			}
 		}
@@ -97,7 +101,7 @@ public class GPSManager {
 				}
 			}
 		}
-		
+
 		public void startLocationUpdates() {
 			if(mGoogleApiClient != null) {
 				try {
@@ -109,6 +113,11 @@ public class GPSManager {
 		}
 		
 		public Location getLastLocation(){
+//			Location location = new Location("");
+//			location.setLongitude(ISU_LNG);
+//			location.setLatitude(ISU_LAT);
+//			return location;
+
 			try {
 				return LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 			} catch(SecurityException e) {
@@ -125,9 +134,17 @@ public class GPSManager {
 				// 20 meters
 				if (distance > 20.0) {
 					lastUpdateLocation = loc;
-					GPSManager.this.main.locationChanged(loc.getLatitude(), loc.getLongitude(), distance, true);
+					if(fragment == null) {
+						((ILocationUpdater)GPSManager.this.main).locationChanged(loc.getLatitude(), loc.getLongitude(), distance, true);
+					} else {
+						GPSManager.this.fragment.locationChanged(loc.getLatitude(), loc.getLongitude(), distance, true);
+					}
 				} else {
-					GPSManager.this.main.locationChanged(loc.getLatitude(), loc.getLongitude(), distance, false);
+					if(fragment == null) {
+						((ILocationUpdater)GPSManager.this.main).locationChanged(loc.getLatitude(), loc.getLongitude(), distance, false);
+					} else {
+						GPSManager.this.fragment.locationChanged(loc.getLatitude(), loc.getLongitude(), distance, false);
+					}
 				}
 			} else {
 				lastUpdateLocation = loc;
@@ -136,19 +153,21 @@ public class GPSManager {
 
 		@Override
 		public void onConnectionFailed(ConnectionResult arg0) {
-			// TODO Auto-generated method stub
-			
+
 		}
 
 		@Override
 		public void onConnected(Bundle bundle) {
 			startLocationUpdates();
-			GPSManager.this.main.locationUpdatesAvailable();
+			if(fragment == null) {
+				((ILocationUpdater)GPSManager.this.main).locationUpdatesAvailable();
+			} else {
+				GPSManager.this.fragment.locationUpdatesAvailable();
+			}
 		}
 
 		@Override
 		public void onConnectionSuspended(int i) {
-			// TODO Auto-generated method stub
 			Log.i(TAG, "GoogleApiClient connection has been suspend");
 		}
 	}

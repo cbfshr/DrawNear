@@ -10,8 +10,9 @@
 		android:id="@+id/drawing_preview"
 		android:layout_width="wrap_content"
 		android:layout_height="fill_parent"
-		android:paddingLeft="4dp"
-		android:adjustViewBounds="true" />
+		android:paddingLeft="6px"
+		android:adjustViewBounds="true"
+		/>
 
 	<LinearLayout
 		android:id="@+id/creator_and_title"

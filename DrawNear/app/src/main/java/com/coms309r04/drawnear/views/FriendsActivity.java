@@ -5,8 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import com.coms309r04.drawnear.R;
-import com.coms309r04.drawnear.tools.MyUtils;
-import com.coms309r04.drawnear.tools.TabListener;
+import com.coms309r04.drawnear.tools.IntentSwitcher;
 import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.ParseException;
@@ -14,9 +13,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
 
-import android.app.ActionBar;
 import android.app.Activity;
-import android.app.ActionBar.Tab;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -79,7 +76,7 @@ public class FriendsActivity extends Activity {
 				NavUtils.navigateUpFromSameTask(this);
 				return true;
 			default:
-				Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
+				Intent intent = IntentSwitcher.onOptionsNavigationSelected(item.getItemId(), this);
 				if(intent != null) {
 					startActivity(intent);
 				}

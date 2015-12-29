@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:2:1-102:12
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:2:1-111:12
 	xmlns:android
 		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -15,6 +15,8 @@ ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.x
 		INJECTED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml
 uses-sdk
 ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:7:2-9:35
+MERGED from [com.android.support:support-v13:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.4.0\AndroidManifest.xml:18:5-42
@@ -210,7 +212,9 @@ ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.x
 	android:name
 		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:26:19-73
 application
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:28:2-100:16
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:28:2-109:16
+MERGED from [com.android.support:support-v13:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v13\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.4.0\AndroidManifest.xml:19:5-20
@@ -318,119 +322,129 @@ MERGED from [com.android.support:support-v4:23.1.1] D:\Projects\DrawNear\DrawNea
 	android:name
 		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:29:3-44
 activity#com.coms309r04.drawnear.views.DispatchActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:34:3-41:14
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:34:3-42:14
 	android:noHistory
 		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:36:4-28
+	android:theme
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:37:4-38
 	android:name
 		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:35:4-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:37:4-40:20
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:38:4-41:20
 action#android.intent.action.MAIN
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:38:5-57
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:39:5-57
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:38:13-54
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:39:13-54
 category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:39:5-65
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:40:5-65
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:39:15-62
-activity#com.coms309r04.drawnear.views.NearbyActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:42:3-45:43
-	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:45:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:44:4-49
-	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:43:4-40
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:40:15-62
 activity#com.coms309r04.drawnear.views.WelcomeActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:46:3-49:43
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:44:3-47:42
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:49:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:48:4-48
-	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:47:4-41
-activity#com.coms309r04.drawnear.views.LoginActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:50:3-53:43
-	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:53:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:52:4-48
-	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:51:4-39
-activity#com.coms309r04.drawnear.views.SignUpActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:54:3-57:43
-	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:57:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:56:4-49
-	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:55:4-40
-activity#com.coms309r04.drawnear.views.MapActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:58:3-62:14
-	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:61:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:60:4-46
-	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:59:4-37
-activity#com.coms309r04.drawnear.views.ProfileActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:63:3-67:14
-	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:66:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:65:4-50
-	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:64:4-41
-activity#com.coms309r04.drawnear.views.SettingsActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:68:3-72:14
-	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:71:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:70:4-51
-	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:69:4-42
-activity#com.coms309r04.drawnear.views.DisplayPostActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:73:3-78:14
-	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:76:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:75:4-32
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:46:4-40
 	android:theme
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:77:4-43
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:47:4-39
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:74:4-45
-activity#com.coms309r04.drawnear.views.CreatePostActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:79:3-83:14
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:45:4-41
+activity#com.coms309r04.drawnear.views.LoginActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:48:3-51:42
 	android:screenOrientation
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:82:4-40
-	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:81:4-54
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:50:4-40
+	android:theme
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:51:4-39
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:80:4-44
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:49:4-39
+activity#com.coms309r04.drawnear.views.SignUpActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:52:3-55:42
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:54:4-40
+	android:theme
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:55:4-39
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:53:4-40
+activity#com.coms309r04.drawnear.views.NearbyActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:57:3-60:43
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:60:4-40
+	android:label
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:59:4-49
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:58:4-40
+activity#com.coms309r04.drawnear.views.MapActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:61:3-65:14
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:64:4-40
+	android:label
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:63:4-46
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:62:4-37
+activity#com.coms309r04.drawnear.views.ProfileActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:66:3-70:14
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:69:4-40
+	android:label
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:68:4-50
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:67:4-41
+activity#com.coms309r04.drawnear.views.SettingsActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:71:3-75:14
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:74:4-40
+	android:label
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:73:4-51
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:72:4-42
+activity#com.coms309r04.drawnear.views.DisplayPostActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:76:3-81:14
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:79:4-40
+	android:label
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:78:4-32
+	android:theme
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:80:4-43
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:77:4-45
+activity#com.coms309r04.drawnear.views.CreatePostActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:82:3-86:14
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:85:4-40
+	android:label
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:84:4-54
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:83:4-44
 activity#com.coms309r04.drawnear.views.AccountActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:84:3-85:14
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:87:3-88:14
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:84:13-50
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:87:13-50
 activity#com.coms309r04.drawnear.views.AccountUpdateActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:86:3-87:14
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:89:3-90:14
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:86:13-56
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:89:13-56
 activity#com.coms309r04.drawnear.views.FriendsActivity
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:88:3-92:14
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:91:3-95:14
 	android:label
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:90:4-50
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:93:4-50
 	android:parentActivityName
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:91:4-78
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:94:4-78
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:89:4-64
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:92:4-64
+activity#com.coms309r04.drawnear.views.MainActivity
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:97:3-101:14
+	android:screenOrientation
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:100:4-40
+	android:label
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:99:4-36
+	android:name
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:98:4-38
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:94:3-96:63
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:103:3-105:63
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:95:4-53
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:104:4-53
 	android:value
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:96:4-60
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:105:4-60
 meta-data#com.google.android.gms.version
-ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:97:3-99:60
+ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:106:3-108:60
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
@@ -463,9 +477,9 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\Dr
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 	android:name
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:98:4-49
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:107:4-49
 	android:value
-		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:99:4-57
+		ADDED from D:\Projects\DrawNear\DrawNear\DrawNear\app\src\main\AndroidManifest.xml:108:4-57
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads:8.4.0] D:\Projects\DrawNear\DrawNear\DrawNear\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\AndroidManifest.xml:26:9-29:64
 	android:configChanges

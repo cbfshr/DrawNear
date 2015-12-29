@@ -3,16 +3,15 @@ package com.coms309r04.drawnear.views;
 import com.coms309r04.drawnear.R;
 import com.coms309r04.drawnear.connection.DrawingManager;
 import com.coms309r04.drawnear.connection.GPSManager;
-import com.coms309r04.drawnear.connection.IGPSActivity;
+import com.coms309r04.drawnear.connection.ILocationUpdater;
 import com.coms309r04.drawnear.data.DrawingItem;
 import com.coms309r04.drawnear.tools.DrawingItemAdapter;
-import com.coms309r04.drawnear.tools.MyUtils;
+import com.coms309r04.drawnear.tools.IntentSwitcher;
 import com.coms309r04.drawnear.tools.TabListener;
 import com.parse.GetDataCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
 import com.parse.ParseGeoPoint;
-import com.parse.ParseUser;
 
 import android.Manifest;
 import android.app.ActionBar.Tab;
@@ -22,11 +21,11 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -38,7 +37,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NearbyActivity extends Activity implements IGPSActivity {
+public class NearbyActivity extends Activity implements ILocationUpdater, SwipeRefreshLayout.OnRefreshListener {
 	ListView listView;
 
 	private static final int MENU_REFRESH_LIST = 9002;
@@ -54,6 +53,7 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 
 	private static final double ISU_LAT = 42.025410, ISU_LNG = -93.646085;
 
+	private SwipeRefreshLayout swipeRefreshLayout;
 	DrawingItemAdapter drawingAdapter = null;
 
 	private GPSManager gps;
@@ -62,6 +62,9 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_nearby);
+
+		swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
+		swipeRefreshLayout.setOnRefreshListener(this);
 
 		// Check if Location is allowed on the device
 		if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -168,15 +171,15 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.navigation, menu);
-		MenuItem drawingComplete = menu.add(0, MENU_REFRESH_LIST, Menu.NONE, R.string.refresh).setIcon(R.drawable.ic_refresh);
-		drawingComplete.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+//		MenuItem drawingComplete = menu.add(0, MENU_REFRESH_LIST, Menu.NONE, R.string.refresh).setIcon(R.drawable.ic_refresh);
+//		drawingComplete.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Temporary demo functionality to access all views with the settings menu
-		Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
+		Intent intent = IntentSwitcher.onOptionsNavigationSelected(item.getItemId(), this);
 
 		if(intent != null) {
 			//views that should load "on top" of view
@@ -185,8 +188,6 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 			}
 
 			startActivity(intent);
-		} else if(item.getItemId() == MENU_REFRESH_LIST) {
-			loadAndUpdateDrawings();
 		}
 
 		return super.onOptionsItemSelected(item);
@@ -228,6 +229,14 @@ public class NearbyActivity extends Activity implements IGPSActivity {
 		/*Toast.makeText(this, "Checking for new drawings...", Toast.LENGTH_SHORT).show();*/
 		MyTask getDrawingsThread = new MyTask();
 		getDrawingsThread.execute();
+	}
+
+	@Override
+	public void onRefresh() {
+		gps.stopGPS();
+		loadAndUpdateDrawings();
+		Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+		swipeRefreshLayout.setRefreshing(false);
 	}
 
 	@Override

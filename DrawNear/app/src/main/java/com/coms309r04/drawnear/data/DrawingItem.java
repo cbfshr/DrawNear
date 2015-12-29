@@ -2,21 +2,19 @@ package com.coms309r04.drawnear.data;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.GregorianCalendar;
-
-import com.google.android.gms.maps.model.Marker;
 import com.parse.ParseFile;
 import com.parse.ParseGeoPoint;
-import com.parse.ParseRole;
 import com.parse.ParseUser;
 
 import android.graphics.Bitmap;
 
 public class DrawingItem {
-	public enum PRIV_TYPE{
-		PUBLIC, FRIENDS, PRIVATE
+	public enum PRIVACY_TYPE {
+		PUBLIC,
+		FRIENDS,
+		PRIVATE
 	}
-	
+
 	private String title;
 	private String id;
 
@@ -30,11 +28,11 @@ public class DrawingItem {
 
 	private byte[] bitmapByteArray;
 
-	private PRIV_TYPE privacy;
+	private PRIVACY_TYPE privacy;
 	private boolean editable;
-	
-	//Recepient(s) if the post is private
-	private ArrayList<String> privateRecepientIDs;
+
+	//Recipient(s) if the post is private
+	private ArrayList<String> privateRecipientIDs;
 
 	private ParseUser creator;
 	private Date dateCreated;
@@ -42,22 +40,22 @@ public class DrawingItem {
 	private double distInMiles;
 	private String markerId;
 
-	public ArrayList<String> getPrivateRecepientIDs() {
-		return privateRecepientIDs;
+	public ArrayList<String> getPrivateRecipientIDs() {
+		return privateRecipientIDs;
 	}
 
-	public void setPrivateRecepients(ArrayList<String> privateRecepientIDs) {
-		this.privateRecepientIDs = privateRecepientIDs;
-	}	
-	
-	public PRIV_TYPE getPrivacy() {
+	public void setPrivateRecipients(ArrayList<String> privateRecepientIDs) {
+		this.privateRecipientIDs = privateRecepientIDs;
+	}
+
+	public PRIVACY_TYPE getPrivacy() {
 		return privacy;
 	}
 
-	public void setPrivacy(PRIV_TYPE privacy) {
+	public void setPrivacy(PRIVACY_TYPE privacy) {
 		this.privacy = privacy;
 	}
-	
+
 	public String getTitle() {
 		return title;
 	}
@@ -98,11 +96,11 @@ public class DrawingItem {
 		this.bmp = bmp;
 	}
 
-	public double getDistInMiles() {
+	public double getDistanceInMiles() {
 		return distInMiles;
 	}
 
-	public void setDistInMiles(double distInMiles) {
+	public void setDistanceInMiles(double distInMiles) {
 		this.distInMiles = distInMiles;
 	}
 
@@ -153,81 +151,8 @@ public class DrawingItem {
 	public void setThumbnail(Bitmap thumbnail) {
 		this.thumbnail = thumbnail;
 	}
-	
+
 	public Bitmap getThumbnail() {
 		return thumbnail;
 	}
-
 }
-
-// import java.util.Date;
-//
-// public class DrawingItem {
-// //create getter/setter functions for these and make them private
-// private int distance;
-// private String strDistance;
-//
-// public String editable;
-// public String dateCreated;
-// public String dateExpiry;
-//
-// /*
-// //private UserItem creator;
-// private String creator;
-// //private UserItem[] contributingEditors;
-// private String[] contibutingEditors;
-// private int rating;
-// //private ViewableLevel viewableLevel;
-// */
-//
-// public DrawingItem (int distance, boolean editable, Date dateCreated, Date
-// dateExpiry) {
-// setDistance(distance);
-// //this.distance = "Distance: " +distance +" meters";
-// setStrDistance(this.getDistance());
-//
-// if(editable)
-// this.editable = "Editable: Yes";
-// else
-// this.editable = "Editable: No";
-//
-// this.dateCreated = dateCreated.toString();
-//
-// this.dateExpiry = dateExpiry.toString();
-// }
-//
-//
-// public void setDistance (int distance) {
-// if(distance < 0) distance = 0;
-// this.distance = distance;
-// }
-//
-// public int getDistance() {
-// return this.distance;
-// }
-//
-// public void setStrDistance(int distance) {
-// if(distance < 0) distance = 0;
-// this.strDistance = "Distance: " +distance +" meters";
-// }
-//
-// public String getStrDistance() {
-// return this.strDistance;
-// }
-//
-//
-// // Properties of a DrawingItem:
-// // original artist
-// /*public void setCreator(String creator) {
-// this.creator = creator;
-// }*/
-// // contributing artists
-// // rating (upvotes/downvotes)
-// // date created
-// // image (.bmp?)
-// // editable? (yes/no)
-// // viewable by: (public, friends, certain recepients only?)
-// // suprise drawing? (boolean) (this determines if intended recipients see
-// // the location of the drawing before they are in range of it)
-// // expiration time
-// }

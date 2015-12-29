@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
 	<string name="app_name">DrawNear</string>
 	<string name="hello_world">Hello world!</string>
@@ -37,10 +37,23 @@
 	<string name="enter_your_username">Enter your username</string>
 	<string name="create_account">Create Account</string>
 	<string name="logout">Logout</string>
-	<string name="login">Login</string>
 	<string name="refresh">Refresh</string>
 	<string name="title_activity_friends">Friends</string>
 	<string name="action_goto_friends">Friends</string>
 	<string name="delete_post">Delete</string>
 	<string name="back">Back</string>
+
+	<string name="login">Log in</string>
+	<string name="signup">Sign up</string>
+	<string name="prompt_username">Username</string>
+	<string name="prompt_password">Password</string>
+	<string name="prompt_password_again">Password Again</string>
+	<string name="error_intro">"Please "</string>
+	<string name="error_blank_username">enter a username</string>
+	<string name="error_blank_password">enter a password</string>
+	<string name="error_mismatched_passwords">enter the same password twice</string>
+	<string name="error_join">", and "</string>
+	<string name="error_end">.</string>
+	<string name="progress_login">Logging you in&#8230;</string>
+	<string name="progress_signup">Signing you up&#8230;</string>
 </resources>

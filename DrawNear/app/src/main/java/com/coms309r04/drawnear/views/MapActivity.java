@@ -36,10 +36,10 @@ import android.widget.Toast;
 import com.coms309r04.drawnear.R;
 import com.coms309r04.drawnear.connection.DrawingManager;
 import com.coms309r04.drawnear.connection.GPSManager;
-import com.coms309r04.drawnear.connection.IGPSActivity;
+import com.coms309r04.drawnear.connection.ILocationUpdater;
 import com.coms309r04.drawnear.data.DrawingItem;
+import com.coms309r04.drawnear.tools.IntentSwitcher;
 import com.coms309r04.drawnear.tools.MapManager;
-import com.coms309r04.drawnear.tools.MyUtils;
 import com.coms309r04.drawnear.tools.TabListener;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -70,7 +70,7 @@ import com.parse.ParseUser;
 
 public class MapActivity
 	extends FragmentActivity
-	implements IGPSActivity, OnMarkerClickListener, OnMapClickListener, OnInfoWindowClickListener {
+	implements ILocationUpdater, OnMarkerClickListener, OnMapClickListener, OnInfoWindowClickListener {
 
 	private static final int GPS_ERRORDIALOG_REQUEST = 9001;
 	private static final int MENU_GET_CURRENT_LOCATION = 9002;
@@ -138,8 +138,7 @@ public class MapActivity
 			arrowRight.setVisibility(View.INVISIBLE);
 
 			animationFadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
-			animationFadeOut = AnimationUtils.loadAnimation(this,
-					R.anim.fadeout);
+			animationFadeOut = AnimationUtils.loadAnimation(this, R.anim.fadeout);
 
 			TextView loggedInAs = (TextView) findViewById(R.id.logged_in_as_map);
 			loggedInAs.setText(ParseUser.getCurrentUser().getUsername());
@@ -242,7 +241,7 @@ public class MapActivity
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Temporary demo functionality to access all views with the settings menu
 
-		Intent intent = MyUtils.onOptionsNavigationSelected(item.getItemId(), this);
+		Intent intent = IntentSwitcher.onOptionsNavigationSelected(item.getItemId(), this);
 		if(intent != null) {
 			// views that should load "on top" of view
 			if(item.getItemId() != R.id.action_goto_create_post) {
@@ -338,7 +337,7 @@ public class MapActivity
 								.get(markerIDsToDrawingsIDs.get(marker.getId()));
 
 						// Distance
-						float miles = (float) d.getDistInMiles();
+						float miles = (float) d.getDistanceInMiles();
 						if (miles >= 0.05) {
 							tvDistance.setText(String.format("%.2f", miles) + "mi");
 						} else {
@@ -439,7 +438,7 @@ public class MapActivity
 							drawing.getLocation().getLatitude(),
 							drawing.getLocation().getLongitude())
 						)
-						.icon(BitmapDescriptorFactory.fromResource(R.drawable.pencil6));
+						.icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_pencil_marker));
 
 				Marker m = mMap.addMarker(options);
 				drawing.setMarkerId(m.getId());
@@ -497,10 +496,10 @@ public class MapActivity
 				return Double.compare(
 					DrawingManager.getInstance().getCurrentNearbyDrawings()
 						.get(markerIDsToDrawingsIDs.get(m1.getId()))
-						.getDistInMiles(),
+						.getDistanceInMiles(),
 					DrawingManager.getInstance().getCurrentNearbyDrawings()
 						.get(markerIDsToDrawingsIDs.get(m2.getId()))
-						.getDistInMiles()
+						.getDistanceInMiles()
 				);
 			}
 		});

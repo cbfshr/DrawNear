@@ -7,7 +7,7 @@ import com.coms309r04.drawnear.data.DrawingItem;
 import com.parse.ParseUser;
 
 import android.content.Context;
-import android.graphics.BitmapFactory;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,7 +41,21 @@ public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
 
 		// Image
 		if (drawingItem.getThumbnail() != null) {
-			imagePreview.setImageBitmap(drawingItem.getThumbnail());
+			Bitmap drawingItemThumbnail = drawingItem.getThumbnail();
+//			Canvas tmpCanvas = new Canvas(drawingItemThumbnail);
+
+
+//			Paint mShadow = new Paint();
+//// radius=10, y-offset=2, color=black
+//			mShadow.setShadowLayer(10.0f, 0.0f, 2.0f, 0xFF000000);
+//// in onDraw(Canvas)
+//			tmpCanvas.drawBitmap(drawingItemThumbnail, 0.0f, 0.0f, mShadow);
+//			//setLayerType(LAYER_TYPE_SOFTWARE, mShadow)
+//
+//			tmpCanvas.drawBitmap(drawingItemThumbnail, 0, 0, null);
+
+
+			imagePreview.setImageBitmap(drawingItemThumbnail);
 		}
 
 		// Title
@@ -50,7 +64,9 @@ public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
 		// Creator
 		if (drawingItem.getCreator() != null) {
 			ParseUser u = drawingItem.getCreator();
-			if (u.getObjectId().equals(ParseUser.getCurrentUser().getObjectId())) {
+			ParseUser curUser = ParseUser.getCurrentUser();
+			//if (u.getObjectId().equals(ParseUser.getCurrentUser().getObjectId())) {
+			if(curUser != null && u != null && curUser.getObjectId().equals(u.getObjectId())) {
 				creator.setText("You");
 			} else {
 				creator.setText(u.getString("username"));
@@ -58,7 +74,7 @@ public class DrawingItemAdapter extends ArrayAdapter<DrawingItem> {
 		}
 
 		// Distance
-		float miles = (float) drawingItem.getDistInMiles();
+		float miles = (float) drawingItem.getDistanceInMiles();
 		if (miles >= 0.05) {
 			distance.setText(String.format("%.2f", miles) + "mi");
 		} else {

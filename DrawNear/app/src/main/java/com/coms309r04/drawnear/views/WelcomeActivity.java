@@ -1,7 +1,6 @@
 package com.coms309r04.drawnear.views;
 
 import com.coms309r04.drawnear.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

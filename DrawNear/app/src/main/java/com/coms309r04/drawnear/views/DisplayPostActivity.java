@@ -1,13 +1,9 @@
 package com.coms309r04.drawnear.views;
 
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.GregorianCalendar;
-
 import com.coms309r04.drawnear.R;
 import com.coms309r04.drawnear.connection.DrawingManager;
 import com.coms309r04.drawnear.data.DrawingItem;
-import com.coms309r04.drawnear.tools.MyUtils;
+import com.coms309r04.drawnear.tools.IntentSwitcher;
 import com.parse.GetCallback;
 import com.parse.GetDataCallback;
 import com.parse.ParseException;
@@ -28,7 +24,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -157,7 +152,7 @@ public class DisplayPostActivity extends Activity {
 			}
 
 			// Distance
-			float miles = (float) d.getDistInMiles();
+			float miles = (float) d.getDistanceInMiles();
 			if (miles >= 0.05) {
 				distance.setText(String.format("%.2f", miles) + "mi");
 			} else {
@@ -243,8 +238,8 @@ public class DisplayPostActivity extends Activity {
 		getMenuInflater().inflate(R.menu.displaypost, menu);
 
 		// if(ParseUser.getCurrentUser().equals(drawingOwner)) {
-		if (drawingOwner != null) {
-			if (ParseUser.getCurrentUser().getObjectId().equals(drawingOwner.getObjectId())) {
+//		if (drawingOwner != null) {
+//			if (ParseUser.getCurrentUser().getObjectId().equals(drawingOwner.getObjectId())) {
 				/*MenuItem deleteDrawing = menu.add(
 					0,
 					R.menu.displaypost,
@@ -252,8 +247,8 @@ public class DisplayPostActivity extends Activity {
 					R.string.delete_post
 				).setIcon(R.drawable.ic_delete);
 				deleteDrawing.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);*/
-			}
-		}
+//			}
+//		}
 
 		return true;
 	}
@@ -284,7 +279,7 @@ public class DisplayPostActivity extends Activity {
 				}
 			});
 		} else {
-			startActivity(MyUtils.onOptionsNavigationSelected(item.getItemId(),
+			startActivity(IntentSwitcher.onOptionsNavigationSelected(item.getItemId(),
 					this));
 		}
 

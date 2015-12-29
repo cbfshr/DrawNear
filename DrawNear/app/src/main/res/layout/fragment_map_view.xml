@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.coms309r04.drawnear.views.MapViewFragment">
+
+	<fragment class="com.google.android.gms.maps.MapFragment"
+		android:id="@+id/mapView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+	<ImageButton
+		android:id="@+id/map_refresh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="5dp"
+		android:onClick="onRefresh"
+		android:src="@drawable/ic_refresh"
+		android:background="@android:color/transparent" />
+
+	<ProgressBar
+		android:id="@+id/progressBar2"
+		style="?android:attr/progressBarStyleLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="40dp" />
+
+	<RelativeLayout
+		android:id="@+id/arrows"
+		android:layout_width="wrap_content"
+		android:layout_height="48dp"
+		android:layout_centerVertical="true" >
+
+		<ImageButton
+			android:id="@+id/map_arrow_left"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:background="@android:color/transparent"
+			android:onClick="onArrowClick"
+			android:padding="5dp"
+			android:scaleType="fitCenter"
+			android:src="@drawable/ic_arrow_left" />
+
+		<ImageButton
+			android:id="@+id/map_arrow_right"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:background="@android:color/transparent"
+			android:onClick="onArrowClick"
+			android:padding="5dp"
+			android:scaleType="fitCenter"
+			android:src="@drawable/ic_arrow_right" />
+	</RelativeLayout>
+
+</RelativeLayout>

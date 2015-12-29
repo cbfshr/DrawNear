@@ -418,21 +418,17 @@
     <string name="enter_your_password">Enter your password</string>
     <string name="enter_your_username">Enter your username</string>
     <string name="erase">Erase</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings_activity_login.xml -->
-    <eat-comment/>
     <string name="error_blank_password">enter a password</string>
     <string name="error_blank_username">enter a username</string>
     <string name="error_end">.</string>
     <string name="error_intro">"Please "</string>
     <string name="error_join">", and "</string>
     <string name="error_mismatched_passwords">enter the same password twice</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="get_current_location">Get Current Location</string>
     <string name="get_name">get_name</string>
     <string name="hello_world">Hello world!</string>
     <string name="logged_in">Welcome, %1$s</string>
-    <string name="login">Login</string>
+    <string name="login">Log in</string>
     <string name="logout">Logout</string>
     <string name="lrg">Large</string>
     <string name="med">Medium</string>
@@ -459,16 +455,15 @@
     <eat-comment/>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings_activity_login.xml -->
+    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="progress_login">Logging you in…</string>
     <string name="progress_signup">Signing you up…</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_password_again">Password Again</string>
     <string name="prompt_username">Username</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="refresh">Refresh</string>
+    <string name="signup">Sign up</string>
     <string name="sml">Small</string>
     <string name="status">Status</string>
     <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
@@ -483,20 +478,10 @@
     <string name="title_activity_create_post">Create Post</string>
     <string name="title_activity_display_post">Display Post</string>
     <string name="title_activity_friends">Friends</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings_activity_login.xml -->
-    <eat-comment/>
-    <string name="title_activity_login">Log in</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="title_activity_map">Map</string>
     <string name="title_activity_nearby">Nearby</string>
     <string name="title_activity_profile">Profile</string>
     <string name="title_activity_settings">Settings</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings_activity_login.xml -->
-    <eat-comment/>
-    <string name="title_activity_signup">Sign up</string>
-    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="trash_drawing">Trash Drawing</string>
     <string name="view_more">View more...</string>
     <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/res/values/wallet_strings.xml -->
@@ -1614,6 +1599,13 @@
         <item name="android:paddingLeft">@dimen/abc_action_bar_overflow_padding_start_material</item>
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
     </style>
+    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="SplashTheme" parent="android:Theme.Holo.Light.NoActionBar">
+		<item name="android:windowBackground">@drawable/background_splash</item>
+	</style>
+    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
     <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>
@@ -1786,6 +1778,10 @@
         <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
         <item name="maskedWalletDetailsLogoImageType">android_pay</item>
     </style>
+    <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="WelcomeTheme" parent="android:Theme.Holo.Light.NoActionBar">
+	</style>
     <!-- From: file:/D:/Projects/DrawNear/DrawNear/DrawNear/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">

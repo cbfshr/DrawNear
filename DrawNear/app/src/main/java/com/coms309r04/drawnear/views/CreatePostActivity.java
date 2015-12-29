@@ -10,9 +10,9 @@ import com.parse.ParseException;
 import com.parse.SaveCallback;
 import com.coms309r04.drawnear.connection.DrawingManager;
 import com.coms309r04.drawnear.connection.GPSManager;
-import com.coms309r04.drawnear.connection.IGPSActivity;
+import com.coms309r04.drawnear.connection.ILocationUpdater;
 import com.coms309r04.drawnear.data.DrawingItem;
-import com.coms309r04.drawnear.tools.MyUtils;
+import com.coms309r04.drawnear.tools.IntentSwitcher;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -49,7 +49,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.View.OnClickListener;
 
-public class CreatePostActivity extends Activity implements OnClickListener, IGPSActivity {
+public class CreatePostActivity extends Activity implements OnClickListener, ILocationUpdater {
 	private GPSManager gps;
 
 	public DrawingView drawView;
@@ -155,7 +155,7 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 			finish();
 		} else {
 
-			Intent intent = MyUtils.onOptionsNavigationSelected(
+			Intent intent = IntentSwitcher.onOptionsNavigationSelected(
 					item.getItemId(), this);
 			if (intent != null) {
 				startActivity(intent);
@@ -245,26 +245,26 @@ public class CreatePostActivity extends Activity implements OnClickListener, IGP
 										.getCheckedRadioButtonId();
 								switch (radioButtonID) {
 								case R.id.radio_public:
-									toSave.setPrivacy(DrawingItem.PRIV_TYPE.PUBLIC);
+									toSave.setPrivacy(DrawingItem.PRIVACY_TYPE.PUBLIC);
 									Log.i("privacy", "Public permission");
 									break;
 								case R.id.radio_friends:
-									toSave.setPrivacy(DrawingItem.PRIV_TYPE.FRIENDS);
+									toSave.setPrivacy(DrawingItem.PRIVACY_TYPE.FRIENDS);
 									Log.i("privacy", "Friends permission");
 									break;
 								case R.id.radio_select_who:
-									toSave.setPrivacy(DrawingItem.PRIV_TYPE.PRIVATE);
+									toSave.setPrivacy(DrawingItem.PRIVACY_TYPE.PRIVATE);
 
 									ArrayList<String> recepIDs = new ArrayList<String>();
 									for (String username : privateRecepients) {
 										recepIDs.add(usernameToID.get(username));
 									}
-									toSave.setPrivateRecepients(recepIDs);
+									toSave.setPrivateRecipients(recepIDs);
 
 									Log.i("privacy", "Individual permission");
 									break;
 								default:
-									toSave.setPrivacy(DrawingItem.PRIV_TYPE.PUBLIC);
+									toSave.setPrivacy(DrawingItem.PRIVACY_TYPE.PUBLIC);
 									break;
 								}
 

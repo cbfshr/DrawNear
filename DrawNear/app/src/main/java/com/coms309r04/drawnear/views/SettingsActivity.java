@@ -1,7 +1,7 @@
 package com.coms309r04.drawnear.views;
 
 import com.coms309r04.drawnear.R;
-import com.coms309r04.drawnear.tools.MyUtils;
+import com.coms309r04.drawnear.tools.IntentSwitcher;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -47,11 +47,11 @@ public class SettingsActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		//Temporary demo functionality to access all views with the settings menu
 
-		//startActivity(MyUtils.onOptionsNavigationSelected(item.getItemId(), this));
+		//startActivity(IntentSwitcher.onOptionsNavigationSelected(item.getItemId(), this));
 		if(item.getItemId() == android.R.id.home) {
 			finish();
 		} else {
-			startActivity(MyUtils.onOptionsNavigationSelected(item.getItemId(), this));
+			startActivity(IntentSwitcher.onOptionsNavigationSelected(item.getItemId(), this));
 		}
 		finish();
 

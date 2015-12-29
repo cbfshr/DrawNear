@@ -38,7 +38,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.coms309r04.drawnear.views.DispatchActivity"
-            android:noHistory="true" >
+            android:noHistory="true"
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,20 +47,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.coms309r04.drawnear.views.NearbyActivity"
-            android:label="@string/title_activity_nearby"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.coms309r04.drawnear.views.WelcomeActivity"
-            android:label="@string/title_activity_login"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeTheme" />
         <activity
             android:name="com.coms309r04.drawnear.views.LoginActivity"
-            android:label="@string/title_activity_login"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeTheme" />
         <activity
             android:name="com.coms309r04.drawnear.views.SignUpActivity"
-            android:label="@string/title_activity_signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeTheme" />
+        <activity
+            android:name="com.coms309r04.drawnear.views.NearbyActivity"
+            android:label="@string/title_activity_nearby"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.coms309r04.drawnear.views.MapActivity"
@@ -95,6 +96,11 @@
             android:name="com.coms309r04.drawnear.views.FriendsActivity"
             android:label="@string/title_activity_friends"
             android:parentActivityName="com.coms309r04.drawnear.views.ProfileActivity" >
+        </activity>
+        <activity
+            android:name="com.coms309r04.drawnear.views.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
 
         <meta-data
